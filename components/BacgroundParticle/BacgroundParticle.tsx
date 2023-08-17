@@ -98,7 +98,7 @@ export const BacgroundParticle = () => {
           },
         },
         interactivity: {
-          detect_on: "canvas",
+          // detect_on: "canvas",
           events: {
             onhover: {
               enable: true,

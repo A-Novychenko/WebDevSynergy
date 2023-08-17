@@ -1,10 +1,37 @@
-import Image from "next/image";
+import {getDictionary} from "../../get-dictionary";
+import {Locale} from "../../i18n-config";
+
 import styles from "./page.module.css";
 
-export default function Home() {
+export default async function Home({params: {lang}}: {params: {lang: Locale}}) {
+  const dictionary = await getDictionary(lang);
   return (
     <main className={styles.main}>
-      <h1>ProJuniors</h1>
+      <div style={{width: "700px", textAlign: "center"}}>
+        <h1>ProJuniors</h1>
+        <p>or</p>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            paddingBottom: "40px",
+          }}
+        >
+          <p style={{fontSize: 40, fontWeight: 700}}>WDS</p>
+          <h2 style={{fontSize: 40, marginLeft: "32px"}}>WebDevSynergy</h2>
+        </div>
+        <p>{dictionary.descr}</p>
+      </div>
+      {/* <div> */}
+      {/* <LocaleSwitcher /> */}
+      {/* <p>Current locale: {lang}</p> */}
+      {/* <p> */}
+      {/* This text is rendered on the server:{" "} */}
+      {/* {dictionary["server-component"].welcome} */}
+      {/* </p> */}
+      {/* <Counter dictionary={dictionary.counter} /> */}
+      {/* </div> */}
       {/* <p style={{color: "white"}}></p> */}
       {/* <div className={styles.description}>
         <p>
@@ -95,3 +122,28 @@ export default function Home() {
     </main>
   );
 }
+
+// import {getDictionary} from "../../get-dictionary";
+// import {Locale} from "../../i18n-config";
+// import Counter from "./components/counter";
+// import LocaleSwitcher from "./components/locale-switcher";
+
+// export default async function IndexPage({
+// params: {lang},
+// }: {
+// params: {lang: Locale};
+// }) {
+// const dictionary = await getDictionary(lang);
+
+//   return (
+//     <div>
+//       <LocaleSwitcher />
+//       <p>Current locale: {lang}</p>
+//       <p>
+//         This text is rendered on the server:{" "}
+//         {dictionary["server-component"].welcome}
+//       </p>
+//       <Counter dictionary={dictionary.counter} />
+//     </div>
+//   );
+// }

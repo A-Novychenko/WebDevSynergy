@@ -1,0 +1,10 @@
+{
+  "server-component": {
+    "welcome": "Welcome"
+  },
+  "counter": {
+    "increment": "Increment",
+    "decrement": "Decrement"
+  },
+  "descr": "WebDevSynergy is a name that vividly expresses the synergy of web development It combines Web (web) and Dev (short for development) with Synergy (synergy) emphasizing the collaborative and innovative development of web projects. A company with this name may imply that it is based on a strong collaboration of developers designers marketers and other professionals to create web solutions that incorporate the best aspects of each area. WebDevSynergy can be understood as a firm committed to a creative responsible and collaborative approach to website and application development"
+}
