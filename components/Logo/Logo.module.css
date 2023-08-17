@@ -1,0 +1,42 @@
+.wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.logo {
+    /* display: block; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background: var(--white, #F6F7F9);
+
+    padding: 8px;
+
+    width: 35px;
+    height: 38px;
+
+    /* font-family: Poppins; */
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    /* line-height: 2.24; */
+    line-height: 0;
+    color: #030712
+}
+
+.logo_title {
+    padding: 10px;
+
+
+    color: var(--white, #F6F7F9);
+    /* h5 semi bold - buttons */
+    /* font-family: Poppins; */
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 2.24;
+    /* 22.4px */
+}

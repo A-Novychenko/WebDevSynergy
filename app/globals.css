@@ -80,9 +80,9 @@ body {
   /* background: linear-gradient(to bottom,
   transparent,
   rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb)); */
-  background-image: url("../public/bgLogo.jpg");
+  /* background-image: url("../public/bgLogo.jpg");
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
 }
 
 a {
