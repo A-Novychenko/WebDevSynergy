@@ -1,6 +1,6 @@
 import {Logo} from "../Logo/Logo";
 import {NavLinks} from "../NavLinks/NavLinks";
-import LocaleSwitcher from "../LocaleSwitcher/LocaleSwitcher";
+import LocaleSwitcher from "../localeSwitcher/LocaleSwitcher";
 
 import styles from "./Header.module.css";
 
