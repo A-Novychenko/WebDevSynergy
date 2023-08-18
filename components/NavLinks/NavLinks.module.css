@@ -11,5 +11,34 @@
     font-style: normal;
     font-weight: 600;
     line-height: 2.24;
+
     /* 22.4px */
+
+    transition: all 1s ease-in-out;
+    position: relative;
+
+}
+
+/* .link:hover {
+    color: #0AD87A;
+} */
+
+
+
+
+.link::before {
+    content: attr(data-item);
+    transition: all 1s ease-in-out;
+    color: #0AD87A;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 0;
+    overflow: hidden;
+}
+
+.link:hover::before {
+    width: 100%;
 }
