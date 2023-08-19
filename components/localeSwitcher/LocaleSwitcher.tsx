@@ -24,7 +24,7 @@ export default function LocaleSwitcher() {
               <Link
                 href={redirectedPathName(locale)}
                 className={
-                  pathName.slice(1, 3) === locale ? styles.active : styles.non
+                  pathName.slice(1, 3) === locale ? styles.active : styles.none
                 }
               >
                 {locale}

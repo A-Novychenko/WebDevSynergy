@@ -1,11 +1,12 @@
 import {BacgroundParticle} from "@/components/BacgroundParticle/BacgroundParticle";
-import "../globals.css";
 import type {Metadata} from "next";
 import {Inter} from "next/font/google";
 import {Header} from "@/components/Header/Header";
+import {Locale} from "../../i18n-config";
+
+import "../globals.css";
 
 const inter = Inter({subsets: ["latin"]});
-import {Locale, i18n} from "../../i18n-config";
 
 export const metadata: Metadata = {
   title: "ProJuniors-portfolio",
