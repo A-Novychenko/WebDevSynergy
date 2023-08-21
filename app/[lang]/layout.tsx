@@ -9,8 +9,9 @@ import "../globals.css";
 const inter = Inter({subsets: ["latin"]});
 
 export const metadata: Metadata = {
-  title: "ProJuniors-portfolio",
-  description: "ProJuniors-portfolio",
+  title: "WDS | Home",
+  description:
+    "WebDevSynergy (WDS) - web studio for the development of design and sites. Design, landing, corporate sites, web applications",
 };
 
 export default function RootLayout({

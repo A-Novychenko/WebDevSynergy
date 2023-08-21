@@ -8,8 +8,6 @@ export default async function Home({params: {lang}}: {params: {lang: Locale}}) {
   return (
     <main className={styles.main}>
       <div style={{width: "700px", textAlign: "center"}}>
-        <h1>ProJuniors</h1>
-        <p>{dictionary.or}</p>
         <div
           style={{
             display: "flex",
@@ -19,7 +17,7 @@ export default async function Home({params: {lang}}: {params: {lang: Locale}}) {
           }}
         >
           <p style={{fontSize: 40, fontWeight: 700}}>WDS</p>
-          <h2 style={{fontSize: 40, marginLeft: "32px"}}>WebDevSynergy</h2>
+          <h1 style={{fontSize: 40, marginLeft: "32px"}}>WebDevSynergy</h1>
         </div>
         <p>{dictionary.descr}</p>
       </div>

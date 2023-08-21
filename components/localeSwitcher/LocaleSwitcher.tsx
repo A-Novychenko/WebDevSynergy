@@ -7,7 +7,7 @@ import styles from "./LocaleSwitcher.module.css";
 
 export default function LocaleSwitcher() {
   const pathName = usePathname();
-  console.log("first", typeof pathName.slice(1, 3));
+
   const redirectedPathName = (locale: Locale) => {
     if (!pathName) return "/";
     const segments = pathName.split("/");
