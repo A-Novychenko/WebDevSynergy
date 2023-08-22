@@ -7,7 +7,13 @@ export default async function Home({params: {lang}}: {params: {lang: Locale}}) {
   const dictionary = await getDictionary(lang);
   return (
     <main className={styles.main}>
-      <div style={{width: "700px", textAlign: "center"}}>
+      <div
+        style={{
+          width: "1920px",
+          textAlign: "center",
+          backgroundColor: "#030712",
+        }}
+      >
         <div
           style={{
             display: "flex",

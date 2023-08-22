@@ -27,7 +27,7 @@ export default function LocaleSwitcher() {
                   pathName.slice(1, 3) === locale ? styles.active : styles.none
                 }
               >
-                {locale}
+                {locale === "uk" ? "ua" : locale}
               </Link>
             </li>
           );

@@ -56,7 +56,7 @@ export const BacgroundParticle = () => {
             },
           },
           opacity: {
-            value: 0.4,
+            value: 0.2,
             random: false,
             anim: {
               enable: false,
@@ -79,7 +79,7 @@ export const BacgroundParticle = () => {
             enable: true,
             distance: 150,
             color: "#0ad87a",
-            opacity: 0.5,
+            opacity: 0.2,
             width: 1,
           },
           move: {
