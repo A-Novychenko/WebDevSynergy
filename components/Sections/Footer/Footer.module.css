@@ -1,0 +1,25 @@
+.footer {
+    max-width: 1920px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #030712;
+
+}
+
+.container {
+    max-width: 1920px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #030712;
+
+}
+
+.wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contacts_link {
+    display: block;
+}

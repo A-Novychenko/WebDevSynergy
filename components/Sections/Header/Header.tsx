@@ -1,7 +1,7 @@
 import {Locale} from "@/i18n-config";
-import {Logo} from "../Logo/Logo";
-import {NavLinks} from "../NavLinks/NavLinks";
-import LocaleSwitcher from "../localeSwitcher/LocaleSwitcher";
+import {Logo} from "../../Elements/Logo/Logo";
+import {NavLinks} from "../../Elements/NavLinks/NavLinks";
+import LocaleSwitcher from "../../Elements/localeSwitcher/LocaleSwitcher";
 
 import styles from "./Header.module.css";
 
