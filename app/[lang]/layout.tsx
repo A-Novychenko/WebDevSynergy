@@ -30,7 +30,9 @@ export default function RootLayout({
         <BacgroundParticle />
 
         <Header lang={lang} />
+
         <main className={styles.main_container}>{children}</main>
+
         <Footer lang={lang} />
       </body>
     </html>

@@ -11,7 +11,7 @@ export const Header = ({lang}: {lang: Locale}) => {
       <div className={styles.container}>
         <div className={styles.wrap}>
           <Logo />
-          <NavLinks lang={lang} />
+          {/* <NavLinks lang={lang} /> */}
           <LocaleSwitcher />
         </div>
       </div>

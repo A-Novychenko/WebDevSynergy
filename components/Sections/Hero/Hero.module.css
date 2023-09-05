@@ -1,16 +1,14 @@
 .wrap {
+    margin: 0;
+    padding: 50px;
     margin-right: auto;
     margin-left: auto;
-
-    /* width: 1920px; */
     height: 602px;
-
     background-color: #030712;
 
 }
 
 .text {
-    /* padding: 50px; */
     color: red;
 
 }
