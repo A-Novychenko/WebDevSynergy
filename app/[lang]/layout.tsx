@@ -1,6 +1,6 @@
 import {BacgroundParticle} from "@/components/Elements/BacgroundParticle/BacgroundParticle";
 import type {Metadata} from "next";
-import {Inter} from "next/font/google";
+import {Poppins} from "next/font/google";
 import {Locale} from "../../i18n-config";
 
 import {Header} from "@/components/Sections/Header/Header";
@@ -9,7 +9,10 @@ import {Footer} from "@/components/Sections/Footer/Footer";
 import "../globals.css";
 import styles from "./page.module.css";
 
-const inter = Inter({subsets: ["latin"]});
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "900"],
+});
 
 export const metadata: Metadata = {
   title: "WDS | Home",
@@ -26,7 +29,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang={lang}>
-      <body className={inter.className}>
+      <body className={poppins.className}>
         <BacgroundParticle />
 
         <Header lang={lang} />
