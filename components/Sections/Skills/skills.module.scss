@@ -37,15 +37,10 @@
     line-height: 150%;
 }
 
-.wrapper_card{
-    display: flex;
-    gap: 21px;
-    flex-wrap: wrap;
+@media (min-width:768px) {
+    .container{
+    max-width: 768px;
+  
 }
-
-@media (min-width: 769px) {
-  .show_more_button {
-    display: none;
-  }
 }
 
