@@ -1,10 +1,10 @@
-import {BacgroundParticle} from "@/components/Elements/BacgroundParticle/BacgroundParticle";
-import type {Metadata} from "next";
-import {Poppins} from "next/font/google";
-import {Locale} from "../../i18n-config";
+import { BacgroundParticle } from "@/components/Elements/BacgroundParticle/BacgroundParticle";
+import type { Metadata } from "next";
+import { Poppins } from "next/font/google";
+import { Locale } from "../../i18n-config";
 
-import {Header} from "@/components/Sections/Header/Header";
-import {Footer} from "@/components/Sections/Footer/Footer";
+import { Header } from "@/components/Sections/Header/Header";
+import { Footer } from "@/components/Sections/Footer/Footer";
 
 import "../globals.css";
 import styles from "./page.module.css";
@@ -22,10 +22,10 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-  params: {lang},
+  params: { lang },
 }: {
   children: React.ReactNode;
-  params: {lang: Locale};
+  params: { lang: Locale };
 }) {
   return (
     <html lang={lang}>
