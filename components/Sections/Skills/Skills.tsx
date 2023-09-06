@@ -15,7 +15,7 @@ export const Skills = ({ arraySkills }: { arraySkills: DataItem[] }) => {
             <section>
                 <h4 className={styled.text_above_header}>power our exceptional solutions</h4>
                 <h3 className={styled.title}>The skills, tools and technologies</h3>
-                <p className={styled.subtitle}>`${"At WebDevSynergy, projects aren't just about code – they're about crafting solutions that make a difference. Join us on this journey of excellence, innovation, and transformation."}`</p>
+                <p className={styled.subtitle}>{`${"At WebDevSynergy, projects aren't just about code – they're about crafting solutions that make a difference. Join us on this journey of excellence, innovation, and transformation."}`}</p>
 
                 <MobileItem arraySkills={arraySkills} />
                 <ItemSkills arraySkills={arraySkills} />
