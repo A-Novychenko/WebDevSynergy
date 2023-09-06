@@ -1,0 +1,35 @@
+.btn_wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 40px;
+  height: 40px;
+}
+
+.btn {
+  background-color: transparent;
+  line-height: 0;
+  border: none;
+}
+
+.icon {
+  color: var(--primary-text-color);
+  stroke: var(--primary-text-color);
+  fill: var(--primary-text-color);
+}
+
+.burger_menu {
+  position: fixed;
+  top: 104px;
+  left: 0;
+  width: 100%;
+
+  background-color: var(--black, #030712);
+}
+
+.burger_menu_list {
+  list-style: none;
+  padding: 24px;
+  text-align: center;
+}
