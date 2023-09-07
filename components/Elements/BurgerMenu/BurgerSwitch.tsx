@@ -3,9 +3,9 @@
 import Image from "next/image";
 
 import {BurgerMenu} from "./BurgerMenu";
+import {useModal} from "@/components/Providers/ModalProvider";
 import burgerMenu from "../../../public/icons/burger.svg";
 import close from "../../../public/icons/close.svg";
-import {useModal} from "@/components/Providers/ModalProvider";
 
 import styles from "./Burger.module.scss";
 
@@ -15,8 +15,6 @@ export const BurgerSwitch = ({dictionary}: {dictionary: Dictionaries}) => {
   const toggleOpenModal = () => {
     openModal(!isOpen);
   };
-
-  console.log("isOpen", isOpen);
 
   return (
     <div style={{display: "block"}}>
