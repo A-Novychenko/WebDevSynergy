@@ -1,11 +1,22 @@
 import Link from "next/link";
 
+import {Backdrop} from "./Backdrop";
+import {useModal} from "@/components/Providers/ModalProvider";
+
 import styles from "./Burger.module.scss";
 
 export const BurgerMenu = ({dictionary}: {dictionary: Dictionaries}) => {
+  const {isOpen, openModal} = useModal();
   return (
-    <div className={styles.burger_menu}>
-      <ul className={styles.burger_menu_list}>
+    <Backdrop>
+      <ul
+        className={styles.burger_menu_list}
+        onClick={(e) => {
+          if (e.target === e.currentTarget) {
+            openModal(false);
+          }
+        }}
+      >
         <li className={styles.item}>
           <Link
             href="#"
@@ -61,6 +72,6 @@ export const BurgerMenu = ({dictionary}: {dictionary: Dictionaries}) => {
           </Link>
         </li>
       </ul>
-    </div>
+    </Backdrop>
   );
 };
