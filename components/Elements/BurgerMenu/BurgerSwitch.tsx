@@ -25,8 +25,8 @@ export const BurgerSwitch = ({dictionary}: {dictionary: Dictionaries}) => {
               className={styles.icon}
               src={burgerMenu}
               alt="icon-line"
-              width={32}
-              height={22}
+              width={56}
+              height={56}
               priority
               onClick={toggleOpenModal}
             />
@@ -38,8 +38,8 @@ export const BurgerSwitch = ({dictionary}: {dictionary: Dictionaries}) => {
               className={styles.icon}
               src={close}
               alt="icon-line"
-              width={22}
-              height={22}
+              width={56}
+              height={56}
               priority
               onClick={toggleOpenModal}
               style={{fill: "red", stroke: "green", color: "yellow"}}
