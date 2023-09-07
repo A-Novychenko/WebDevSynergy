@@ -1,53 +1,56 @@
 import Link from "next/link";
-import styles from "./NavLinks.module.css";
+
 import {getDictionary} from "@/get-dictionary";
 import {Locale} from "@/i18n-config";
 
+import styles from "./NavLinks.module.scss";
+
 export const NavLinks = async ({lang}: {lang: Locale}) => {
   const dictionary = await getDictionary(lang);
+
   return (
     <nav className={styles.wrap}>
       <Link
         className={styles.link}
         href=""
-        data-item={dictionary["server-component"].links.home}
+        data-item={dictionary["server-component"].header.links.home}
       >
-        {dictionary["server-component"].links.home}
+        {dictionary["server-component"].header.links.home}
       </Link>
       <Link
         className={styles.link}
         href=""
-        data-item={dictionary["server-component"].links.technologies}
+        data-item={dictionary["server-component"].header.links.technologies}
       >
-        {dictionary["server-component"].links.technologies}
+        {dictionary["server-component"].header.links.technologies}
       </Link>
       <Link
         className={styles.link}
         href=""
-        data-item={dictionary["server-component"].links.projects}
+        data-item={dictionary["server-component"].header.links.projects}
       >
-        {dictionary["server-component"].links.projects}
+        {dictionary["server-component"].header.links.projects}
       </Link>
       <Link
         className={styles.link}
         href=""
-        data-item={dictionary["server-component"].links.ourTeam}
+        data-item={dictionary["server-component"].header.links.ourTeam}
       >
-        {dictionary["server-component"].links.ourTeam}
+        {dictionary["server-component"].header.links.ourTeam}
       </Link>
       <Link
         className={styles.link}
         href=""
-        data-item={dictionary["server-component"].links.services}
+        data-item={dictionary["server-component"].header.links.services}
       >
-        {dictionary["server-component"].links.services}
+        {dictionary["server-component"].header.links.services}
       </Link>
       <Link
         className={styles.link}
         href=""
-        data-item={dictionary["server-component"].links.contact}
+        data-item={dictionary["server-component"].header.links.contact}
       >
-        {dictionary["server-component"].links.contact}
+        {dictionary["server-component"].header.links.contact}
       </Link>
     </nav>
   );

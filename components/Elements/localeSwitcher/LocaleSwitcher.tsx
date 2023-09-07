@@ -6,11 +6,13 @@ import Link from "next/link";
 
 import {Locale, i18n} from "../../../i18n-config";
 import liney from "../../../public/icons/liney.svg";
+import {useModal} from "@/components/Providers/ModalProvider";
 
-import styles from "./LocaleSwitcher.module.css";
+import styles from "./LocaleSwitcher.module.scss";
 
 export default function LocaleSwitcher() {
   const pathName = usePathname();
+  const {isOpen, openModal} = useModal();
 
   const redirectedPathName = (locale: Locale) => {
     if (!pathName) return "/";
@@ -19,7 +21,7 @@ export default function LocaleSwitcher() {
     return segments.join("/");
   };
 
-  return (
+  return !isOpen ? (
     <ul className={styles.list}>
       {i18n.locales.map((locale) => {
         return (
@@ -46,5 +48,5 @@ export default function LocaleSwitcher() {
         );
       })}
     </ul>
-  );
+  ) : null;
 }

@@ -1,25 +1,25 @@
 "use client";
 
 import Image from "next/image";
-import {useState} from "react";
 
 import {BurgerMenu} from "./BurgerMenu";
 import burgerMenu from "../../../public/icons/burger.svg";
 import close from "../../../public/icons/close.svg";
+import {useModal} from "@/components/Providers/ModalProvider";
 
 import styles from "./Burger.module.scss";
 
-export const BurgerSwitch = () => {
-  const [isOpen, setIsOpen] = useState(false);
+export const BurgerSwitch = ({dictionary}: {dictionary: Dictionaries}) => {
+  const {isOpen, openModal} = useModal();
 
   const toggleOpenModal = () => {
-    setIsOpen(!isOpen);
+    openModal(!isOpen);
   };
 
   console.log("isOpen", isOpen);
 
   return (
-    <>
+    <div style={{display: "block"}}>
       <div className={styles.btn_wrap}>
         {!isOpen && (
           <button type="button" className={styles.btn}>
@@ -44,11 +44,12 @@ export const BurgerSwitch = () => {
               height={22}
               priority
               onClick={toggleOpenModal}
+              style={{fill: "red", stroke: "green", color: "yellow"}}
             />
           </button>
         )}
       </div>
-      {isOpen && <BurgerMenu />}
-    </>
+      {isOpen && <BurgerMenu dictionary={dictionary} />}
+    </div>
   );
 };

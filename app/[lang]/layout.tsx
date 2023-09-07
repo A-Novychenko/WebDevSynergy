@@ -5,9 +5,10 @@ import {Locale} from "../../i18n-config";
 
 import {Header} from "@/components/Sections/Header/Header";
 import {Footer} from "@/components/Sections/Footer/Footer";
+import {ModalProvider} from "@/components/Providers/ModalProvider";
 
 import "../globals.css";
-import styles from "./page.module.css";
+import styles from "./page.module.scss";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -31,8 +32,9 @@ export default function RootLayout({
     <html lang={lang}>
       <body className={poppins.className}>
         <BacgroundParticle />
-
-        <Header lang={lang} />
+        <ModalProvider>
+          <Header lang={lang} />
+        </ModalProvider>
 
         <main className={styles.main_container}>{children}</main>
 
