@@ -1,0 +1,11 @@
+<svg width="37" height="36" viewBox="0 0 37 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="twemoji:flag-poland" clip-path="url(#clip0_1827_9663)">
+<path id="Vector" d="M32.5 5H4.5C3.43913 5 2.42172 5.42143 1.67157 6.17157C0.921427 6.92172 0.5 7.93913 0.5 9L0.5 18H36.5V9C36.5 7.93913 36.0786 6.92172 35.3284 6.17157C34.5783 5.42143 33.5609 5 32.5 5Z" fill="#EEEEEE"/>
+<path id="Vector_2" d="M0.5 27C0.5 28.0609 0.921427 29.0783 1.67157 29.8284C2.42172 30.5786 3.43913 31 4.5 31H32.5C33.5609 31 34.5783 30.5786 35.3284 29.8284C36.0786 29.0783 36.5 28.0609 36.5 27V18H0.5V27Z" fill="#DC143C"/>
+</g>
+<defs>
+<clipPath id="clip0_1827_9663">
+<rect width="36" height="36" fill="white" transform="translate(0.5)"/>
+</clipPath>
+</defs>
+</svg>
