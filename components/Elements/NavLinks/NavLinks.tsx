@@ -10,48 +10,42 @@ export const NavLinks = async ({lang}: {lang: Locale}) => {
 
   return (
     <nav className={styles.wrap}>
-      <Link
-        className={styles.link}
-        href=""
-        data-item={dictionary["server-component"].header.links.home}
-      >
-        {dictionary["server-component"].header.links.home}
-      </Link>
-      <Link
-        className={styles.link}
-        href=""
-        data-item={dictionary["server-component"].header.links.technologies}
-      >
-        {dictionary["server-component"].header.links.technologies}
-      </Link>
-      <Link
-        className={styles.link}
-        href=""
-        data-item={dictionary["server-component"].header.links.projects}
-      >
-        {dictionary["server-component"].header.links.projects}
-      </Link>
-      <Link
-        className={styles.link}
-        href=""
-        data-item={dictionary["server-component"].header.links.ourTeam}
-      >
-        {dictionary["server-component"].header.links.ourTeam}
-      </Link>
-      <Link
-        className={styles.link}
-        href=""
-        data-item={dictionary["server-component"].header.links.services}
-      >
-        {dictionary["server-component"].header.links.services}
-      </Link>
-      <Link
-        className={styles.link}
-        href=""
-        data-item={dictionary["server-component"].header.links.contact}
-      >
-        {dictionary["server-component"].header.links.contact}
-      </Link>
+      <ul className={styles.link_list}>
+        <li className={styles.link_item}>
+          <Link
+            className={styles.link}
+            href="/"
+            data-item={dictionary["server-component"].header.links.home}
+          >
+            {dictionary["server-component"].header.links.home}
+          </Link>
+        </li>
+        <li className={styles.link_item}>
+          <Link className={styles.link} href="">
+            {dictionary["server-component"].header.links.services}
+          </Link>
+        </li>
+        <li className={styles.link_item}>
+          <Link className={styles.link} href="">
+            {dictionary["server-component"].header.links.projects}
+          </Link>
+        </li>
+        <li className={styles.link_item}>
+          <Link className={styles.link} href="">
+            {dictionary["server-component"].header.links.technologies}
+          </Link>
+        </li>
+        <li className={styles.link_item}>
+          <Link className={styles.link} href="">
+            {dictionary["server-component"].header.links.ourTeam}
+          </Link>
+        </li>
+        <li className={styles.link_item}>
+          <Link className={styles.link_contact} href="#contact">
+            {dictionary["server-component"].header.links.contact}
+          </Link>
+        </li>
+      </ul>
     </nav>
   );
 };

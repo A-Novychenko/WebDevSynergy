@@ -18,20 +18,29 @@
   line-height: 1.5;
 
   border-radius: 8px;
-  background-color: var(--white, #f6f7f9);
+  background-color: var(--primary-text-color);
 }
 
 .logo_title {
-  // display: none;
-
   padding: 10px;
 
   color: var(--primary-text-color);
-  /* h5 semi bold - buttons */
-  /* font-family: Poppins; */
   font-size: 16px;
-  font-style: normal;
   font-weight: 600;
   line-height: 2.24;
-  /* 22.4px */
+}
+
+.logo_title_desc {
+  display: none;
+
+  padding: 12px;
+
+  color: var(--primary-text-color);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+
+  @media screen and (min-width: 1280px) {
+    display: block;
+  }
 }
