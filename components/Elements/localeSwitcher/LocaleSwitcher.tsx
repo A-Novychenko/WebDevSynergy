@@ -35,15 +35,15 @@ export default function LocaleSwitcher() {
               }
             >
               {locale === "uk" ? "ua" : locale}
-              <Image
-                className={styles.icon}
-                src={liney}
-                alt="icon-line"
-                width={20}
-                height={20}
-                priority
-              />
             </Link>
+            <Image
+              className={styles.icon}
+              src={liney}
+              alt="icon-line"
+              width={20}
+              height={20}
+              priority
+            />
           </li>
         );
       })}

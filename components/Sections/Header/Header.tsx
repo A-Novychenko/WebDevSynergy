@@ -7,6 +7,8 @@ import {getDictionary} from "@/get-dictionary";
 import {LogoName} from "@/components/Elements/Logo/LogoName";
 
 import styles from "./Header.module.scss";
+import {LogoNameDesctop} from "@/components/Elements/Logo/LogoNameDesctop";
+import Link from "next/link";
 
 export const Header = async ({lang}: {lang: Locale}) => {
   const dictionary = await getDictionary(lang);
@@ -14,11 +16,14 @@ export const Header = async ({lang}: {lang: Locale}) => {
     <header className={styles.header}>
       <div className={styles.container}>
         <div className={styles.wrap}>
-          <Logo />
-          <LogoName />
+          <Link href="/" className={styles.logo}>
+            <Logo />
+            <LogoName />
+            <LogoNameDesctop />
+          </Link>
 
           <>
-            {/* <NavLinks lang={lang} /> */}
+            <NavLinks lang={lang} />
             <LocaleSwitcher />
             <BurgerSwitch dictionary={dictionary} />
           </>

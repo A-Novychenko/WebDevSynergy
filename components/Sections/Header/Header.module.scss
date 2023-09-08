@@ -1,17 +1,34 @@
 .header {
   position: fixed;
   padding: 24px;
-
   width: 100%;
 
-  background-color: #030712;
+  background: var(--third-text-color);
 }
 
 .container {
-  max-width: 1920px;
   margin-right: auto;
   margin-left: auto;
-  background-color: #030712;
+
+  background-color: var(third-text-color);
+
+  @media screen and (min-width: 375px) {
+    max-width: 327px;
+  }
+
+  @media screen and (min-width: 475px) {
+    width: 427px;
+    max-width: 100%;
+  }
+  @media screen and (min-width: 768px) {
+    width: 720px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 1040px;
+  }
+  @media screen and (min-width: 1920px) {
+    width: 1680px;
+  }
 }
 
 .wrap {
@@ -20,18 +37,24 @@
   align-items: center;
 }
 
+.logo {
+  display: flex;
+
+  text-decoration: none;
+
+  cursor: pointer;
+
+  transition: transform var(--animation-hover);
+
+  &:hover,
+  &link:focus {
+    transform: var(--scale-transform-hover);
+  }
+}
+
 .icon {
   color: var(--primary-text-color);
   stroke: var(--primary-text-color);
   fill: var(--primary-text-color);
   color: inherit;
 }
-
-/* 
-@media screen and (max-width: 1280px) {
-    .container {
-        max-width: 1280px;
-        margin-right: auto;
-        margin-left: auto;
-    }
-} */

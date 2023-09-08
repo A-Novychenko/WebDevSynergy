@@ -5,8 +5,8 @@
   align-items: center;
 }
 
-.item:last-child > a {
-  padding-left: 0;
+.item {
+  display: flex;
 }
 
 .item:last-child img {
@@ -29,6 +29,19 @@
   line-height: 1.5;
   text-transform: uppercase;
   text-decoration: none;
+
+  &:hover,
+  &:focus {
+    border-radius: 16px;
+    background: rgba(246, 247, 249, 0.2);
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 12px;
+  }
+  @media screen and (min-width: 1920px) {
+    font-size: 16px;
+  }
 }
 
 .not_active {
@@ -45,4 +58,18 @@
   line-height: 1.5;
   text-transform: uppercase;
   text-decoration: none;
+
+  &:hover,
+  &:focus {
+    border-radius: 16px;
+    background: rgba(246, 247, 249, 0.2);
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 12px;
+  }
+
+  @media screen and (min-width: 1920px) {
+    font-size: 16px;
+  }
 }

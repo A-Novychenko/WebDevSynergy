@@ -17,7 +17,7 @@ export const BurgerSwitch = ({dictionary}: {dictionary: Dictionaries}) => {
   };
 
   return (
-    <div style={{display: "block"}}>
+    <>
       <div className={styles.btn_wrap}>
         {!isOpen && (
           <button type="button" className={styles.btn}>
@@ -48,6 +48,6 @@ export const BurgerSwitch = ({dictionary}: {dictionary: Dictionaries}) => {
         )}
       </div>
       {isOpen && <BurgerMenu dictionary={dictionary} />}
-    </div>
+    </>
   );
 };
