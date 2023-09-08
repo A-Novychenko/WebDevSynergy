@@ -15,7 +15,8 @@
 .hero__subHeader {
   font-size: var(--primary-text-size);
   font-weight: 500;
-  line-height: 150%; /* 21px */
+  line-height: 150%;
+  /* 21px */
   letter-spacing: 2.52px;
   text-transform: uppercase;
 
@@ -25,7 +26,8 @@
 .hero__header {
   font-size: var(--mob-title-size);
   font-weight: 600;
-  line-height: 48px; /* 150% */
+  line-height: 48px;
+  /* 150% */
   letter-spacing: -0.64px;
   text-transform: uppercase;
   margin-bottom: 24px;
@@ -38,7 +40,8 @@
 .hero__description {
   font-size: var(--primary-text-size);
   font-weight: 400;
-  line-height: 150%; /* 21px */
+  line-height: 150%;
+  /* 21px */
   margin-bottom: 24px;
 }
 
@@ -49,7 +52,8 @@
   text-align: center;
   font-size: var(--primary-text-size);
   font-weight: 600;
-  line-height: 150%; /* 21px */
+  line-height: 150%;
+  /* 21px */
 
   border: none;
   border-radius: 16px;
@@ -136,6 +140,9 @@
   .hero__img {
     width: 100%;
     height: 100%;
+
+    position: relative;
+    z-index: 100;
   }
 }
 
@@ -155,6 +162,7 @@
   .wrap {
     width: 1680px;
     gap: 24px;
+    padding-top: 80px;
   }
 
   .hero_imgThumb {
