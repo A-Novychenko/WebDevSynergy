@@ -1,8 +1,7 @@
 import Image from "next/image";
 
 import imgMain from "../../../public/main.png";
-
-import styles from "./Hero.module.css";
+import styles from "./Hero.module.scss";
 
 type HeroProps = {};
 
@@ -11,7 +10,7 @@ export const Hero: React.FC<HeroProps> = () => {
     <section className={styles.wrap}>
       <div className={styles.hero__mainThumb}>
         <h2 className={styles.hero__subHeader}>
-          where tech talent meets opportunity
+          where tech talent meets opp?ortunity
         </h2>
         <h1 className={styles.hero__header}>
           Top Tech Talent at{" "}
