@@ -1,11 +1,11 @@
 
-import styled from './skills.module.scss'
+import styled from './technologies.module.scss'
 
 import { DataItem } from '@/data/skills';
 import { MobileItem } from '@/components/Elements/ItemSkills/MobileItemSkills';
 import { ItemSkills } from '@/components/Elements/ItemSkills/ItemSkills';
 
-export const Skills = ({ arraySkills }: { arraySkills: DataItem[] }) => {
+export const Technologies = ({ arraySkills }: { arraySkills: DataItem[] }) => {
 
 
 
