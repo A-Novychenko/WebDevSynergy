@@ -19,10 +19,11 @@
 }
 
 .title{
-    margin-bottom: 24px;
-    font-size: var(--third-text-size);
+   margin-bottom: 24px;
+    font-size: var( --secondary-text-size);
     font-weight: 600;
-    line-height: 150%; /* 30px */
+   font-style: normal;
+    line-height: 24px;
     letter-spacing: 0.4px;
     text-transform: uppercase;
     color: var(--primary-text-color);
@@ -30,8 +31,50 @@
 
 .subtitle{
     margin-bottom: 24px;
-    font-size: var(--primary-text-size);
+    font-size: var( --primary-text-size);
     color: var(--primary-text-color);
     font-weight: 400;
-    line-height: 150%;
+    line-height: 18px;
+}
+
+.subtitle_width{
+    height: 36px;
+    font-size: var(--header-text-size);
+    margin: 0;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    
+    gap: 8px;
+    width: 155px;
+}
+
+.wraper_dev{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.wraper_dev_first{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between ;
+    gap: 8px;
+}
+
+.last_name{
+    font-size: var( --header-text-size);
+    font-weight: 600;
+   font-style: normal;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    color: var(--primary-text-color);
+}
+
+.wraper_social{
+    display: flex;
+    gap: 8px; 
 }
