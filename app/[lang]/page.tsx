@@ -17,10 +17,12 @@ export default async function Home({ params: { lang } }: { params: { lang: Local
     <>
       <Hero />
 
+
       <Technologies arraySkills={arraySkills} />
       <Team arrayTeam={arrayTeam} lang={lang} />
 
-      <Contact />
+
+      <Contact dictionary={dictionary} />
 
     </>
   );
