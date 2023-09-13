@@ -1,14 +1,14 @@
-import novichenko from '../public/team/Novichenko.png'
-import kharlan from '../public/team/Kharlan.png'
-import borysov from '../public/team/Borysov.png'
-import veryk from '../public/team/Veryk.png'
-import babenko from '../public/team/Babenko.png'
-import kopytko from '../public/team/Kopytko.png'
+import novichenko from '../public/Ourteam/Novichenko.png'
+import kharlan from '../public/Ourteam/Kharlan.png'
+import borysov from '../public/Ourteam/Borysov.png'
+import veryk from '../public/Ourteam/Veryk.png'
+import babenko from '../public/Ourteam/Babenko.png'
+import kopytko from '../public/Ourteam/Kopytko.png'
 
-import linkedin from '../public/team/social_linkedin.svg'
-import telegram from '../public/team/telegram.svg'
-import github from '../public/team/github.svg'
-import resume from '../public/team/resume.svg'
+import linkedin from '../public/Ourteam/social_linkedin.svg'
+import telegram from '../public/Ourteam/telegram.svg'
+import github from '../public/Ourteam/github.svg'
+import resume from '../public/Ourteam/resume.svg'
 
 
 export const arrayTeam = [
