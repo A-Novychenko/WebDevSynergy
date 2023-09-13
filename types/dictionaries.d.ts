@@ -1,5 +1,5 @@
 type Dictionaries = {
-  "server-component": {header: {links: DictionariesLinks}};
+  "server-component": { header: { links: DictionariesLinks }; contact: Contact};
 };
 
 type Header = {
@@ -14,3 +14,17 @@ type DictionariesLinks = {
   ourTeam: string;
   contact: string;
 };
+
+type Contact = {
+  subtitle: string,
+  title: string,
+  description: string,
+  form: ContactForm
+};
+
+type ContactForm = {
+  name: string,
+  email: string,
+  message: string,
+  button: string
+}

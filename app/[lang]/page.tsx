@@ -11,7 +11,7 @@ export default async function Home({params: {lang}}: {params: {lang: Locale}}) {
     <>
       <Hero />
       <Skills arraySkills={arraySkills} />
-      <Contact/>
+      <Contact dictionary={dictionary} />
     </>
   );
 }

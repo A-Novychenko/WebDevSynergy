@@ -7,6 +7,7 @@
   --header-text-size: 12px;
   --mob-title-size: 32px;
   --desktop-title-size: 40px;
+  --big-desctop-desc-size: 24px;
   --big-desktop-title-size: 48px;
 
   --primary-text-color: #f6f7f9;
@@ -16,7 +17,7 @@
   --hover-light-grey-color: #cac9c9;
 
   --animation-hover: 0.3s ease-in-out;
-  --scale-transform-hover: scale(1.025)
+  --scale-transform-hover: scale(1.025);
 }
 
 body {
@@ -25,9 +26,7 @@ body {
   padding: 0;
   margin: 0;
   background-color: #030712;
-
 }
-
 
 .visually-hidden {
   position: absolute;
@@ -41,7 +40,6 @@ body {
   clip-path: inset(50%);
   margin: -1px;
 }
-
 
 h1,
 h2,

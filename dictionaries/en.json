@@ -9,6 +9,17 @@
         "ourTeam": "Our team",
         "contact": "Contact"
       }
+    },
+    "contact": {
+      "subtitle": "Let's innovate together and create a digital future that's uniquely yours",
+      "title": "Get in Touch",
+      "description": "Ready to take your business to the next level? We're here to help! Whether you have a project in mind or need expert guidance, our team is just a message away. Contact us today to discuss your ideas and learn how we can collaborate to turn them into reality.",
+      "form": {
+        "name": "Enter your name",
+        "email": "Enter your e-mail",
+        "message": "Enter your message",
+        "button": "Send message"
+      }
     }
   }
 }
