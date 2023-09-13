@@ -1,8 +1,7 @@
 .wrap {
   width: 100%;
-  padding-left: 24px;
-  padding-right: 24px;
-  padding-bottom: 40px;
+  padding: 34px 24px 40px 24px;
+
   background-color: var(--third-text-color);
 }
 
@@ -13,24 +12,23 @@
 }
 
 .hero__subHeader {
+  margin-bottom: 8px;
+
   font-size: var(--primary-text-size);
   font-weight: 500;
-  line-height: 150%;
-  /* 21px */
+  line-height: 1.5;
   letter-spacing: 2.52px;
   text-transform: uppercase;
-
-  margin-bottom: 8px;
 }
 
 .hero__header {
+  margin-bottom: 24px;
+
   font-size: var(--mob-title-size);
   font-weight: 600;
-  line-height: 48px;
-  /* 150% */
+  line-height: 1.5;
   letter-spacing: -0.64px;
   text-transform: uppercase;
-  margin-bottom: 24px;
 }
 
 .hero__headerAccent {
@@ -38,50 +36,45 @@
 }
 
 .hero__description {
+  margin-bottom: 24px;
+
   font-size: var(--primary-text-size);
   font-weight: 400;
-  line-height: 150%;
-  /* 21px */
-  margin-bottom: 24px;
+  line-height: 1.5;
 }
 
 .hero__accentBtn {
   width: 100%;
+  padding: 14px 24px;
+  margin-bottom: 16px;
+  border: none;
+  border-radius: 16px;
+
+  background: var(--secondary-text-color);
 
   color: var(--third-text-color);
   text-align: center;
   font-size: var(--primary-text-size);
   font-weight: 600;
-  line-height: 150%;
-  /* 21px */
-
-  border: none;
-  border-radius: 16px;
-  background: var(--secondary-text-color);
-
-  padding: 14px 24px;
-  margin-bottom: 16px;
+  line-height: 1.5;
 }
 
 .hero__btn {
   width: 100%;
-
   padding: 14px 24px;
-
-  border-radius: 16px;
+  margin-bottom: 32px;
   border: 1px solid var(--primary-text-color);
+  border-radius: 16px;
 
   background-color: var(--third-text-color);
+
   color: var(--primary-text-color);
-  margin-bottom: 32px;
 }
 
 .hero_imgThumb {
   border-radius: 16px;
 
   overflow: hidden;
-
-  /* position: relative; */
 }
 
 .hero__img {
@@ -94,9 +87,9 @@
   }
 
   .hero_imgThumb {
-    border-radius: 16px;
     width: 100%;
     height: 220px;
+    border-radius: 16px;
 
     overflow: hidden;
   }
@@ -104,13 +97,12 @@
 
 @media screen and (min-width: 768px) {
   .wrap {
-    width: 720px;
-    margin-left: auto;
-    margin-right: auto;
     display: flex;
     gap: 16px;
-    padding: 0;
-    padding-bottom: 56px;
+    width: 720px;
+    padding: 56px 0;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .hero_imgThumb {
@@ -138,18 +130,18 @@
   }
 
   .hero__img {
-    width: 100%;
-    height: 100%;
-
     position: relative;
     z-index: 100;
+
+    width: 100%;
+    height: 100%;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .wrap {
     width: 1040px;
-
+    padding-top: 80px;
     padding-bottom: 80px;
   }
 
@@ -162,7 +154,6 @@
   .wrap {
     width: 1680px;
     gap: 24px;
-    padding-top: 80px;
   }
 
   .hero_imgThumb {

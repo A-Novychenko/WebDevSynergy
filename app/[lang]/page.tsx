@@ -1,6 +1,10 @@
+
 import { getDictionary } from "../../get-dictionary";
 import { Locale } from "../../i18n-config";
 import { Hero } from "@/components/Sections/Hero/Hero";
+
+import { Contact } from "@/components/Sections/Contact/Contact";
+
 
 import { arraySkills } from "@/data/skills";
 import { Technologies } from "@/components/Sections/Technologies/Technologies";
@@ -11,8 +15,12 @@ export default async function Home({ params: { lang } }: { params: { lang: Local
   return (
     <>
       <Hero />
+
       <Technologies arraySkills={arraySkills} />
       <Team />
+
+      <Contact />
+
     </>
   );
 }

@@ -1,0 +1,56 @@
+.container {
+  width: 100%;
+  padding: 40px 24px;
+}
+
+.text {
+  margin-bottom: 8px;
+
+  font-size: var(--primary-text-size);
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 2.52px;
+  text-transform: uppercase;
+  color: var(--secondary-text-color);
+}
+
+.title {
+  margin-bottom: 24px;
+
+  font-size: var(--third-text-size);
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  color: var(--primary-text-color);
+}
+
+.subtitle {
+  font-size: var(--primary-text-size);
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--primary-text-color);
+}
+
+.image_contact {
+  width: 100%;
+}
+
+.wrap {
+  margin-top: 24px;
+}
+
+.form {
+  margin-top: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 56px 24px;
+  }
+  .wrap {
+    display: flex;
+    gap: 16px;
+    margin-top: 32px;
+  }
+}
