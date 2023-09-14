@@ -9,7 +9,7 @@ import close from "../../../public/icons/close.svg";
 
 import styles from "./Burger.module.scss";
 
-export const BurgerSwitch = ({dictionary}: {dictionary: Dictionaries}) => {
+export const BurgerSwitch = ({dictionary, lang}: BurgerProps) => {
   const {isOpen, openModal} = useModal();
 
   const toggleOpenModal = () => {
@@ -47,7 +47,7 @@ export const BurgerSwitch = ({dictionary}: {dictionary: Dictionaries}) => {
           </button>
         )}
       </div>
-      {isOpen && <BurgerMenu dictionary={dictionary} />}
+      {isOpen && <BurgerMenu dictionary={dictionary} lang={lang} />}
     </>
   );
 };

@@ -1,4 +1,6 @@
 import Link from "next/link";
+import Image from "next/image";
+
 import {Locale} from "@/i18n-config";
 import {Logo} from "../../Elements/Logo/Logo";
 import {NavLinks} from "../../Elements/NavLinks/NavLinks";
@@ -6,7 +8,6 @@ import flagUa from "../../../public/icons/flag-ukraine.svg";
 import flagPl from "../../../public/icons/flag-poland.svg";
 
 import styles from "./Footer.module.scss";
-import Image from "next/image";
 
 export const Footer = ({lang}: {lang: Locale}) => {
   return (
@@ -24,7 +25,7 @@ export const Footer = ({lang}: {lang: Locale}) => {
           </div>
 
           <div className={styles.contacts_wrap}>
-            <ul id="contact" className={styles.contacts_list}>
+            <ul className={styles.contacts_list}>
               <li>
                 <Link
                   href="mailto:wds.webdevsynergy@gmail.com"
@@ -95,7 +96,7 @@ export const Footer = ({lang}: {lang: Locale}) => {
             </ul>
           </div>
 
-          <ul id="contact" className={styles.contacts_list_desc}>
+          <ul className={styles.contacts_list_desc}>
             <li>
               <Link
                 href="mailto:wds.webdevsynergy@gmail.com"
