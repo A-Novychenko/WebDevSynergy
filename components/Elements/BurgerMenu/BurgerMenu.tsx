@@ -1,12 +1,16 @@
 import Link from "next/link";
+import {usePathname} from "next/navigation";
 
 import {Backdrop} from "./Backdrop";
 import {useModal} from "@/components/Providers/ModalProvider";
 
 import styles from "./Burger.module.scss";
 
-export const BurgerMenu = ({dictionary}: {dictionary: Dictionaries}) => {
-  const {isOpen, openModal} = useModal();
+export const BurgerMenu = ({dictionary, lang}: BurgerProps) => {
+  const {openModal} = useModal();
+  const pathname = usePathname();
+  const currentPath = pathname.slice(4);
+
   return (
     <Backdrop>
       <ul
@@ -19,54 +23,62 @@ export const BurgerMenu = ({dictionary}: {dictionary: Dictionaries}) => {
       >
         <li className={styles.item}>
           <Link
-            href="#"
-            data-item={dictionary["server-component"].header.links.home}
+            href={`/${lang}/`}
+            style={{color: currentPath === "" ? "#0ad87a" : "#f6f7f9"}}
             className={styles.link}
+            onClick={() => openModal(false)}
           >
             {dictionary["server-component"].header.links.home}
           </Link>
         </li>
         <li className={styles.item}>
           <Link
-            href="#"
-            data-item={dictionary["server-component"].header.links.services}
+            href={`/${lang}/services`}
+            style={{color: currentPath === "services" ? "#0ad87a" : "#f6f7f9"}}
             className={styles.link}
+            onClick={() => openModal(false)}
           >
             {dictionary["server-component"].header.links.services}
           </Link>
         </li>
         <li className={styles.item}>
           <Link
-            href="#"
-            data-item={dictionary["server-component"].header.links.projects}
+            href={`/${lang}/projects`}
+            style={{color: currentPath === "projects" ? "#0ad87a" : "#f6f7f9"}}
             className={styles.link}
+            onClick={() => openModal(false)}
           >
             {dictionary["server-component"].header.links.projects}
           </Link>
         </li>
         <li className={styles.item}>
           <Link
-            href="#"
-            data-item={dictionary["server-component"].header.links.technologies}
+            href={`/${lang}/technologies`}
+            style={{
+              color: currentPath === "technologies" ? "#0ad87a" : "#f6f7f9",
+            }}
             className={styles.link}
+            onClick={() => openModal(false)}
           >
             {dictionary["server-component"].header.links.technologies}
           </Link>
         </li>
         <li className={styles.item}>
           <Link
-            href="#"
-            data-item={dictionary["server-component"].header.links.ourTeam}
+            href={`/${lang}/ourteam`}
+            style={{color: currentPath === "ourteam" ? "#0ad87a" : "#f6f7f9"}}
             className={styles.link}
+            onClick={() => openModal(false)}
           >
             {dictionary["server-component"].header.links.ourTeam}
           </Link>
         </li>
         <li className={styles.item}>
           <Link
-            href="#"
-            data-item={dictionary["server-component"].header.links.contact}
+            href={`/${lang}/#contact`}
+            style={{color: currentPath === "contact" ? "#0ad87a" : "#f6f7f9"}}
             className={styles.link_contact}
+            onClick={() => openModal(false)}
           >
             {dictionary["server-component"].header.links.contact}
           </Link>

@@ -1,11 +1,11 @@
-import {BacgroundParticle} from "@/components/Elements/BacgroundParticle/BacgroundParticle";
 import type {Metadata} from "next";
 import {Poppins} from "next/font/google";
-import {Locale} from "../../i18n-config";
 
+import {Locale} from "../../i18n-config";
 import {Header} from "@/components/Sections/Header/Header";
 import {Footer} from "@/components/Sections/Footer/Footer";
 import {ModalProvider} from "@/components/Providers/ModalProvider";
+import {BacgroundParticle} from "@/components/Elements/BacgroundParticle/BacgroundParticle";
 
 import "../globals.css";
 import styles from "./page.module.scss";
@@ -32,6 +32,7 @@ export default function RootLayout({
     <html lang={lang}>
       <body className={poppins.className}>
         <BacgroundParticle />
+
         <ModalProvider>
           <Header lang={lang} />
         </ModalProvider>
@@ -39,7 +40,6 @@ export default function RootLayout({
         <main className={styles.main_container}>{children}</main>
 
         <Footer lang={lang} />
-        <div id="modal-root"></div>
       </body>
     </html>
   );

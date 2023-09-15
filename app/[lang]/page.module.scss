@@ -8,6 +8,8 @@
 }
 
 .main_container {
+  position: relative;
+  z-index: 150;
   padding-top: 104px;
   margin-right: auto;
   margin-left: auto;
