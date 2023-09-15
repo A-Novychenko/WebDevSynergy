@@ -1,5 +1,9 @@
+import { type } from "os";
+
 type Dictionaries = {
-  "server-component": { header: { links: DictionariesLinks }; contact: Contact};
+  "server-component": {
+    team: any; header: { links: DictionariesLinks }; contact: Contact; team: Teams; technologies:Technologies
+};
 };
 
 type Header = {
@@ -27,4 +31,14 @@ type ContactForm = {
   email: string,
   message: string,
   button: string
+};
+type Teams = {
+  above_header: string,
+  title: string,
+  subtitle: string
+};
+type Technologies = {
+  above_header:string,
+  title:string,
+  subtitle:string
 }
