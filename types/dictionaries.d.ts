@@ -1,9 +1,11 @@
-import { type } from "os";
-
 type Dictionaries = {
   "server-component": {
-    team: any; header: { links: DictionariesLinks }; contact: Contact; team: Teams; technologies:Technologies
-};
+    team: any;
+    header: {links: DictionariesLinks};
+    contact: Contact;
+    team: Teams;
+    technologies: Technologies;
+  };
 };
 
 type Header = {
@@ -20,25 +22,25 @@ type DictionariesLinks = {
 };
 
 type Contact = {
-  subtitle: string,
-  title: string,
-  description: string,
-  form: ContactForm
+  subtitle: string;
+  title: string;
+  description: string;
+  form: ContactForm;
 };
 
 type ContactForm = {
-  name: string,
-  email: string,
-  message: string,
-  button: string
+  name: string;
+  email: string;
+  message: string;
+  button: string;
 };
 type Teams = {
-  above_header: string,
-  title: string,
-  subtitle: string
+  above_header: string;
+  title: string;
+  subtitle: string;
 };
 type Technologies = {
-  above_header:string,
-  title:string,
-  subtitle:string
-}
+  above_header: string;
+  title: string;
+  subtitle: string;
+};
