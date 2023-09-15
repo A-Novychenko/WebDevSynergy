@@ -34,11 +34,13 @@ type ContactForm = {
   message: string;
   button: string;
 };
+
 type Teams = {
   above_header: string;
   title: string;
   subtitle: string;
 };
+
 type Technologies = {
   above_header: string;
   title: string;
