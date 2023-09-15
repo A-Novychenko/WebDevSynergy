@@ -1,8 +1,11 @@
 .footer {
+  position: relative;
+
   margin-right: auto;
   margin-left: auto;
-  background-color: #030712;
   padding: 24px;
+
+  z-index: 150;
 
   @media screen and (min-width: 768px) {
     padding-top: 40px;
@@ -173,9 +176,13 @@
 .footer_desc {
   display: none;
   @media screen and (min-width: 1280px) {
+    position: relative;
+
     display: block;
     padding-top: 64px;
     padding-bottom: 64px;
+
+    z-index: 150;
   }
   @media screen and (min-width: 1920px) {
     padding-top: 80px;
