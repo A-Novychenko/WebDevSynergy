@@ -1,4 +1,19 @@
-
+.section{
+    padding-top: 40px;
+    padding-bottom: 40px;
+  @media  (min-width: 768px) {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+@media  (min-width: 1280px) {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }  
+@media  (min-width: 1920px) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }               
+}
 
 .container{
     max-width: 375px;
@@ -7,26 +22,65 @@
 
     padding-left: 24px;
     padding-right: 24px;
+
+     @media  (min-width: 480px) {
+    max-width: 480px;
+  }
+
+     @media  (min-width: 768px) {
+    max-width: 768px;
+  }
+
+  @media  (min-width: 1280px) {
+    max-width: 1280px;
+     padding-left: 120px;
+    padding-right: 120px;
+  }
+   @media  (min-width: 1920px) {
+    max-width: 1920px;
+  }
 }
 
 .text_above_header{
     margin-bottom: 8px;
     font-weight: 500;
-    line-height: 150%; /* 21px */
+    line-height: 21px; 
     letter-spacing: 2.52px;
     text-transform: uppercase;
     font-size: var(--primary-text-size);
     color: var(--secondary-text-color);
+
+     @media  (min-width: 1280px) {
+        font-size:var( --secondary-text-size) ;
+        line-height: 32px;
+        letter-spacing: 2.88px;
+     }
+      @media  (min-width: 1920px) {
+        font-size:var( --secondary-text-size) ;
+     }
+
 }
 
 .title{
     margin-bottom: 24px;
     font-size: var(--third-text-size);
     font-weight: 600;
-    line-height: 150%; /* 30px */
+    line-height: 30px; 
     letter-spacing: 0.4px;
     text-transform: uppercase;
     color: var(--primary-text-color);
+     @media  (min-width: 1280px) {
+      margin-bottom: 32px;
+        font-size: var(--mob-title-size);
+        line-height: 48px; 
+        letter-spacing: -0.64px;
+     }
+      @media  (min-width: 1920px) {
+        font-size:var(--desktop-title-size) ;
+        line-height: 56px; 
+        letter-spacing: -0.8px;
+     }
+   
 }
 
 .subtitle{
@@ -35,12 +89,16 @@
     color: var(--primary-text-color);
     font-weight: 400;
     line-height: 150%;
+
+      @media  (min-width: 1280px) {
+        font-size: var( --secondary-text-size);
+        line-height: 32px;
+      }
+      @media  (min-width: 1920px) {
+        font-size: var( --big-desctop-desc-size);
+         line-height: 40px;
+      }
 }
 
-@media (min-width:768px) {
-    .container{
-    max-width: 768px;
-  
-}
-}
+
 

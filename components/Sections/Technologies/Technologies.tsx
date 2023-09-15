@@ -4,18 +4,25 @@ import styled from './technologies.module.scss'
 import { DataItem } from '@/data/skills';
 import { MobileItem } from '@/components/Elements/ItemSkills/MobileItemSkills';
 import { ItemSkills } from '@/components/Elements/ItemSkills/ItemSkills';
+import { type } from 'os';
+import { Dictionaries } from '@/types/dictionaries';
 
-export const Technologies = ({ arraySkills }: { arraySkills: DataItem[] }) => {
+type TechProps = {
+    arraySkills: DataItem[],
+    tech: Dictionaries,
+}
+
+export const Technologies = ({ arraySkills, tech }: TechProps) => {
 
 
 
 
     return (
         <div className={styled.container}>
-            <section>
-                <h4 className={styled.text_above_header}>power our exceptional solutions</h4>
-                <h3 className={styled.title}>The skills, tools and technologies</h3>
-                <p className={styled.subtitle}>{`${"At WebDevSynergy, projects aren't just about code – they're about crafting solutions that make a difference. Join us on this journey of excellence, innovation, and transformation."}`}</p>
+            <section className={styled.section}>
+                <h4 className={styled.text_above_header}>{tech["server-component"].technologies.above_header}</h4>
+                <h3 className={styled.title}>{tech["server-component"].technologies.title}</h3>
+                <p className={styled.subtitle}>{tech["server-component"].technologies.subtitle}</p>
 
                 <MobileItem arraySkills={arraySkills} />
                 <ItemSkills arraySkills={arraySkills} />

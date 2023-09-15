@@ -20,6 +20,16 @@
         "message": "Enter your message",
         "button": "Send message"
       }
+    },
+    "team":{
+      "above_header":"unique strengths to every project",
+      "title":"Our team",
+      "subtitle":"At WebDevSynergy, we believe that every successful project is a result of the collective brilliance of our diverse and talented team. Our professionals are driven by a shared passion for innovation, creativity, and delivering outstanding solutions."
+    },
+    "technologies":{
+       "above_header":"POWER OUR EXCEPTIONAL SOLUTIONS",
+      "title":"The skills, tools and technologies",
+      "subtitle":"At WebDevSynergy, projects aren't just about code – they're about crafting solutions that make a difference. Join us on this journey of excellence, innovation, and transformation."
     }
   }
 }

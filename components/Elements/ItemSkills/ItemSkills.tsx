@@ -14,7 +14,7 @@ export const ItemSkills = ({ arraySkills }: { arraySkills: DataItem[] }) => {
                 {arraySkills.map((item) => {
                     return (
 
-                        <li key={item.id} >
+                        <li className={styled.item_card} key={item.id} >
                             <Image className={styled.img} src={item.logo} width={65} height={65} alt={item.name} />
                             <p className={styled.text}>{item.name}</p>
                         </li>

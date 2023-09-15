@@ -20,8 +20,8 @@ export default async function Home({ params: { lang } }: { params: { lang: Local
       <Hero />
 
 
-      <Technologies arraySkills={arraySkills} />
-      <Team arrayTeam={arrayTeam} lang={lang} />
+      <Technologies arraySkills={arraySkills} tech={dictionary} />
+      <Team arrayTeam={arrayTeam} lang={lang} teams={dictionary} />
 
 
       <Contact dictionary={dictionary} />
