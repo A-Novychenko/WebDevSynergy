@@ -92,6 +92,15 @@ export const NavLinks = ({lang}: {lang: Locale}) => {
             {dictionary[`${lang}`].contact}
           </Link>
         </li>
+        <li className={styles.link_item}>
+          <Link
+            href={`/${lang}/TG_form`}
+            style={{color: currentPath === "TG_form" ? "#0ad87a" : "#f6f7f9"}}
+            className={styles.link}
+          >
+            TG
+          </Link>
+        </li>
       </ul>
     </nav>
   );

@@ -4,7 +4,6 @@ type BurgerProps = {
 };
 
 type Person = {
-  
   textFields: {
     uk: {
       firstName: string;
@@ -16,11 +15,10 @@ type Person = {
     };
   };
   id: number;
-  img: StaticImageData; 
+  img: StaticImageData;
   profession: string;
-  linkedin: string; 
-  telegram: string; 
-  github: string; 
-  resume: string; 
+  linkedin: string;
+  telegram: string;
+  github: string;
+  resume: string;
 };
-
