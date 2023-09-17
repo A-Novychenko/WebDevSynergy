@@ -1,7 +1,6 @@
-.container {
-  width: 100%;
-
+.section {
   padding: 40px 24px;
+  width: 100%;
 
   @media screen and (min-width: 768px) {
     padding: 56px 24px;
@@ -13,6 +12,32 @@
 
   @media screen and (min-width: 1920px) {
     padding: 80px 120px;
+  }
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+
+  @media screen and (min-width: 375px) {
+    max-width: 327px;
+  }
+
+  @media screen and (min-width: 475px) {
+    width: 427px;
+    max-width: 100%;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 720px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 1040px;
+  }
+
+  @media screen and (min-width: 1920px) {
+    width: 1680px;
   }
 }
 
@@ -77,23 +102,21 @@
   }
 }
 
-.image_contact {
-  width: 100%;
+// .image_contact {
+//   width: 100%;
 
-  @media screen and (min-width: 768px) {
-    width: 40%;
-    // width: 260px;
-    // width: 50%;
+//   @media screen and (min-width: 768px) {
+//     width: 40%;
 
-    border-radius: 16px;
+//     border-radius: 16px;
 
-    object-fit: cover;
-  }
+//     object-fit: cover;
+//   }
 
-  @media screen and (min-width: 1280px) {
-    width: 100%;
-  }
-}
+//   @media screen and (min-width: 1280px) {
+//     width: 100%;
+//   }
+// }
 
 .wrap {
   margin-top: 24px;
@@ -112,16 +135,44 @@
   }
 }
 
+.image {
+  background-image: url("../../../public/contact/mobile.png");
+  background-repeat: no-repeat;
+
+  height: 192px;
+
+  @media screen and (min-width: 475px) {
+    background-position: 50% 50%;
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: url("../../../public/contact/tablet.png");
+    border-radius: 16px;
+
+    width: 260px;
+    height: 388px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    background-image: url("../../../public/contact/desktop.png");
+
+    width: 508px;
+    height: 404px;
+  }
+
+  @media screen and (min-width: 1920px) {
+    background-image: url("../../../public/contact/bigDesktop.png");
+
+    width: 970px;
+    height: 428px;
+  }
+}
+
 .form {
   margin-top: 24px;
 
   @media screen and (min-width: 768px) {
-    width: 444px;
     margin-top: 0;
-  }
-
-  @media screen and (min-width: 1280px) {
-    width: 508px;
   }
 }
 
@@ -146,13 +197,15 @@
   }
 
   @media screen and (min-width: 768px) {
-    margin-bottom: 24px;
-
-    // width: 444px;
+    margin-bottom: 16px;
   }
 
   @media screen and (min-width: 1280px) {
     height: 56px;
+  }
+
+  @media screen and (min-width: 1920px) {
+    margin-bottom: 24px;
   }
 }
 
@@ -179,11 +232,9 @@
 
   @media screen and (min-width: 768px) {
     margin-bottom: 24px;
-
-    // width: 444px;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1920px) {
     margin-bottom: 32px;
   }
 }
@@ -212,13 +263,6 @@
   &:hover,
   &:focus {
     transform: var(--scale-transform-hover);
-  }
-
-  @media screen and (min-width: 768px) {
-    // margin-left: auto;
-    // margin-right: auto;
-
-    // width: 444px;
   }
 
   @media screen and (min-width: 1280px) {
