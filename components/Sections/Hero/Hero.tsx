@@ -1,45 +1,55 @@
 import Image from "next/image";
+import Link from "next/link";
 
 import imgMain from "../../../public/main.png";
 import styles from "./Hero.module.scss";
 
-type HeroProps = {};
+type HeroProps = {
+  lang: "uk" | "en";
+  dictionary: Dictionaries;
+};
 
-export const Hero: React.FC<HeroProps> = () => {
+export const Hero = ({ dictionary, lang }: HeroProps) => {
   return (
-    <section className={styles.wrap}>
-      <div className={styles.hero__mainThumb}>
-        <h2 className={styles.hero__subHeader}>
-          where tech talent meets opp?ortunity
-        </h2>
-        <h1 className={styles.hero__header}>
-          Top Tech Talent at{" "}
-          <span className={styles.hero__headerAccent}>Web Dev Synergy:</span>{" "}
-          Elevate Your Team with Us
-        </h1>
-        <p className={styles.hero__description}>
-          We are a team of passionate developers and designers who thrive on
-          turning ideas into reality. Our projects reflect our dedication to
-          excellence and our commitment.
-        </p>
-        <div className={styles.hero__btnThumb}>
-          <button className={styles.hero__accentBtn} type="button">
-            Order service
-          </button>
-          <button className={styles.hero__btn} type="button">
-            Our projects
-          </button>
+    <section className={styles.section}>
+      <div className={styles.container}>
+        <div className={styles.mainThumb}>
+          <h2 className={styles.subHeader}>
+            {dictionary["server-component"].hero.subtitle}
+          </h2>
+          <h1 className={styles.header}>
+            {dictionary["server-component"].hero.titleStart}
+            <span className={styles.headerAccent}>
+              {dictionary["server-component"].hero.accents}
+            </span>
+            {dictionary["server-component"].hero.titleEnd}
+          </h1>
+          <p className={styles.description}>
+            {dictionary["server-component"].hero.description}
+          </p>
+          <div className={styles.btnThumb}>
+            <button className={styles.accentBtn} type="button">
+              <Link href={`/${lang}/projects`} className={styles.link}>
+                {dictionary["server-component"].hero.btnSecvice}
+              </Link>
+            </button>
+            <button className={styles.btn} type="button">
+              <Link href={`/${lang}/projects`} className={styles.link}>
+                {dictionary["server-component"].hero.btnProject}
+              </Link>
+            </button>
+          </div>
         </div>
-      </div>
-      <div className={styles.hero_imgThumb}>
-        <Image
-          className={styles.hero__img}
-          src={imgMain}
-          // width={327}
-          // height={220}
-          sizes="100vw"
-          alt="Picture of the author"
-        />
+        <div className={styles.imgThumb}>
+          <Image
+            className={styles.img}
+            src={imgMain}
+            // width={327}
+            // height={220}
+            sizes="100vw"
+            alt="Picture of the author"
+          />
+        </div>
       </div>
     </section>
   );

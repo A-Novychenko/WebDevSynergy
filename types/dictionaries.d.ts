@@ -1,10 +1,12 @@
 type Dictionaries = {
   "server-component": {
     team: any;
-    header: {links: DictionariesLinks};
+    header: { links: DictionariesLinks };
     contact: Contact;
     team: Teams;
     technologies: Technologies;
+    service: dictionaryServices;
+    hero: Hero;
   };
 };
 
@@ -45,4 +47,21 @@ type Technologies = {
   above_header: string;
   title: string;
   subtitle: string;
+};
+
+type Hero = {
+  subtitle: string;
+  titleStart: string;
+  accents: string;
+  titleEnd: string;
+  description: string;
+  btnSecvice: string;
+  btnProject: string;
+};
+
+type dictionaryServices = {
+  header: string;
+  subHeader: string;
+  description: string;
+  otherServices: string;
 };

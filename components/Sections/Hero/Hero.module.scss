@@ -1,17 +1,15 @@
-.wrap {
+.container {
   width: 100%;
   padding: 34px 24px 40px 24px;
-
-  // background-color: var(--third-text-color);
 }
 
-.hero__subHeader,
-.hero__header,
-.hero__description {
+.subHeader,
+.header,
+.description {
   color: var(--primary-text-color);
 }
 
-.hero__subHeader {
+.subHeader {
   margin-bottom: 8px;
 
   font-size: var(--primary-text-size);
@@ -21,7 +19,7 @@
   text-transform: uppercase;
 }
 
-.hero__header {
+.header {
   margin-bottom: 24px;
 
   font-size: var(--mob-title-size);
@@ -31,11 +29,11 @@
   text-transform: uppercase;
 }
 
-.hero__headerAccent {
+.headerAccent {
   color: var(--secondary-text-color);
 }
 
-.hero__description {
+.description {
   margin-bottom: 24px;
 
   font-size: var(--primary-text-size);
@@ -43,7 +41,7 @@
   line-height: 1.5;
 }
 
-.hero__accentBtn {
+.accentBtn {
   width: 100%;
   padding: 14px 24px;
   margin-bottom: 16px;
@@ -57,9 +55,16 @@
   font-size: var(--primary-text-size);
   font-weight: 600;
   line-height: 1.5;
+  .link {
+    color: var(--third-text-color);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.5;
+  }
 }
 
-.hero__btn {
+.btn {
   width: 100%;
   padding: 14px 24px;
   margin-bottom: 32px;
@@ -69,20 +74,37 @@
   background-color: var(--third-text-color);
 
   color: var(--primary-text-color);
+  font-size: var(--primary-text-size);
+
+  .link {
+    color: var(--primary-text-color);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.5;
+  }
 }
 
-.hero_imgThumb {
+.imgThumb {
   border-radius: 16px;
 
   overflow: hidden;
 }
 
-.hero__img {
+.img {
   width: 100%;
 }
 
 @media screen and (min-width: 375px) {
-  .hero__img {
+  .container {
+    width: 327px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .img {
     object-fit: fill;
   }
 
@@ -95,10 +117,17 @@
   }
 }
 
+@media screen and (min-width: 475px) {
+  .container {
+    width: 427px;
+  }
+}
+
 @media screen and (min-width: 768px) {
-  .wrap {
+  .container {
     display: flex;
     gap: 16px;
+
     width: 720px;
     padding: 56px 0;
     margin-left: auto;
@@ -109,27 +138,27 @@
     height: 361px;
   }
 
-  .hero__subHeader {
+  .subHeader {
     margin-bottom: 16px;
   }
 
-  .hero__header,
-  .hero__description {
+  .header,
+  .description {
     margin-bottom: 32px;
   }
 
-  .hero__btnThumb {
+  .btnThumb {
     display: flex;
     gap: 16px;
   }
 
-  .hero__accentBtn,
-  .hero__btn {
+  .accentBtn,
+  .btn {
     width: 168px;
     margin-bottom: 0;
   }
 
-  .hero__img {
+  .img {
     position: relative;
     z-index: 100;
 
@@ -139,24 +168,24 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .wrap {
+  .container {
     width: 1040px;
     padding-top: 80px;
     padding-bottom: 80px;
   }
 
-  .hero_imgThumb {
+  .imgThumb {
     height: 454px;
   }
 }
 
 @media screen and (min-width: 1920px) {
-  .wrap {
+  .container {
     width: 1680px;
     gap: 24px;
   }
 
-  .hero_imgThumb {
+  .imgThumb {
     height: 640px;
   }
 }

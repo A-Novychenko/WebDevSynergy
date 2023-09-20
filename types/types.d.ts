@@ -22,3 +22,15 @@ type Person = {
   github: string;
   resume: string;
 };
+
+type Service = {
+  id: number;
+  textFields: {
+    uk: {
+      serviceName: string;
+    };
+    en: {
+      serviceName: string;
+    };
+  };
+};
