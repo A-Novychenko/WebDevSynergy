@@ -21,15 +21,30 @@
         "button": "Send message"
       }
     },
-    "team":{
-      "above_header":"unique strengths to every project",
-      "title":"Our team",
-      "subtitle":"At WebDevSynergy, we believe that every successful project is a result of the collective brilliance of our diverse and talented team. Our professionals are driven by a shared passion for innovation, creativity, and delivering outstanding solutions."
+    "team": {
+      "above_header": "unique strengths to every project",
+      "title": "Our team",
+      "subtitle": "At WebDevSynergy, we believe that every successful project is a result of the collective brilliance of our diverse and talented team. Our professionals are driven by a shared passion for innovation, creativity, and delivering outstanding solutions."
     },
-    "technologies":{
-       "above_header":"POWER OUR EXCEPTIONAL SOLUTIONS",
-      "title":"The skills, tools and technologies",
-      "subtitle":"At WebDevSynergy, projects aren't just about code – they're about crafting solutions that make a difference. Join us on this journey of excellence, innovation, and transformation."
+    "technologies": {
+      "above_header": "POWER OUR EXCEPTIONAL SOLUTIONS",
+      "title": "The skills, tools and technologies",
+      "subtitle": "At WebDevSynergy, projects aren't just about code – they're about crafting solutions that make a difference. Join us on this journey of excellence, innovation, and transformation."
+    },
+    "hero": {
+      "subtitle": "Where tech talent meets opportunity",
+      "titleStart": "Top Tech Talent at ",
+      "titleEnd": "levate Your Team with Us",
+      "accents": "Web Dev Synergy: ",
+      "description": "We are a team of passionate developers and designers who thrive on turning ideas into reality. Our projects reflect our dedication to excellence and our commitment.",
+      "btnSecvice": "Order service",
+      "btnProject": "Our projects"
+    },
+    "service": {
+      "header": "Elevate your business in the digital realm",
+      "subHeader": "Services",
+      "description": "Explore the following core services we specialize in, each crafted with expertise and creativity to drive your success.",
+      "otherServices": "Other services"
     }
   }
 }
