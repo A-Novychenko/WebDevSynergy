@@ -34,3 +34,11 @@ type Service = {
     };
   };
 };
+
+type projectItem = {
+  id: number;
+  poster: string;
+  label: string;
+  discription: string;
+  icons: ane[];
+};
