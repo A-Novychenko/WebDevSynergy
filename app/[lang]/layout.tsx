@@ -1,5 +1,5 @@
 import type {Metadata} from "next";
-import {Poppins} from "next/font/google";
+import {Roboto} from "next/font/google";
 
 import {Locale} from "../../i18n-config";
 import {Header} from "@/components/Sections/Header/Header";
@@ -10,9 +10,9 @@ import {BacgroundParticle} from "@/components/Elements/BacgroundParticle/Bacgrou
 import "../globals.css";
 import styles from "./page.module.scss";
 
-const poppins = Poppins({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "900"],
+const roboto = Roboto({
+  subsets: ["latin", "cyrillic"],
+  weight: ["400", "500", "700", "900"],
 });
 
 export const metadata: Metadata = {
@@ -30,7 +30,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang={lang}>
-      <body className={poppins.className}>
+      <body className={roboto.className}>
         <BacgroundParticle />
 
         <ModalProvider>
