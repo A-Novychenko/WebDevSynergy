@@ -40,16 +40,7 @@ export const Hero = ({ dictionary, lang }: HeroProps) => {
             </button>
           </div>
         </div>
-        <div className={styles.imgThumb}>
-          <Image
-            className={styles.img}
-            src={imgMain}
-            // width={327}
-            // height={220}
-            sizes="100vw"
-            alt="Picture of the author"
-          />
-        </div>
+        <div className={styles.imgThumb}></div>
       </div>
     </section>
   );
