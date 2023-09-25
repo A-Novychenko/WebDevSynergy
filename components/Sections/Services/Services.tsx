@@ -1,8 +1,11 @@
+// "use client";
+
 import Image from "next/image";
 import Link from "next/link";
 
 import arrow from "../../../public/arrow.svg";
 import styles from "./Services.module.scss";
+import { ServicesItem } from "@/components/Elements/ServicesItem/ServicesItem";
 
 type ServicesProps = {
   arrayServices: Service[];
@@ -25,34 +28,21 @@ export const Services = ({ arrayServices, lang, services }: ServicesProps) => {
         </p>
         <ul className={styles.serviceList}>
           {arrayServices.map((service) => {
+            const backgroundStyle = {
+              background: service.img,
+            };
+
             return (
-              <li key={service.id} className={styles.item}>
-                <div className={styles.wrap}>
-                  <span className={styles.title}>
-                    {service.textFields[lang].serviceName}
-                  </span>
-                  <button className={styles.btn} type="button">
-                    <Link href={`/${lang}/services`} className={styles.link}>
-                      <span className={styles.mobiletextFields}>
-                        {service.textFields[lang].serviceName}
-                      </span>
-                      <span className={styles.desktopTextFields}>More</span>
-                      <Image
-                        className={styles.icon}
-                        src={arrow}
-                        alt="icon-arrow"
-                        width={16}
-                        height={14}
-                        priority
-                      />
-                    </Link>
-                  </button>
-                </div>
-              </li>
+              <ServicesItem
+                key={service.id}
+                background={backgroundStyle.background.src}
+                lang={lang}
+                serviceName={service.textFields[lang].serviceName}
+              />
             );
           })}
 
-          <li key={"service"} className={styles.item}>
+          <li key={"service"} className={`${styles.item} ${styles.itemBg}`}>
             <div className={styles.wrap}>
               <span className={styles.title}>Other services</span>
               <button className={styles.btn} type="button">

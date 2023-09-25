@@ -7,6 +7,10 @@
   display: none;
 }
 
+.item {
+  background: none;
+}
+
 .wrap {
   width: 100%;
 }
@@ -120,14 +124,20 @@
   }
 
   .item {
+    position: relative;
     width: calc(50% - 8px);
     border-radius: 16px;
+    padding: 0 24px;
+  }
+
+  .itemBg {
     background: linear-gradient(
-      0deg,
-      rgba(3, 7, 18, 0.8) 0%,
-      rgba(3, 7, 18, 0.8) 100%
-    );
-    // url(<path-to-image>), lightgray 50% / cover no-repeat;
+        0deg,
+        rgba(3, 7, 18, 0.8) 0%,
+        rgba(3, 7, 18, 0.8) 100%
+      ),
+      url("../../../public/images/services/img_8.jpg") no-repeat;
+    background-size: cover;
   }
 
   .wrap {
@@ -143,6 +153,7 @@
   .title {
     display: block;
     text-align: center;
+    color: var(--primary-text-color);
   }
 
   .description {
@@ -197,6 +208,7 @@
 
   .item {
     width: calc(25% - 12px);
+    padding: 0 40px;
   }
 }
 

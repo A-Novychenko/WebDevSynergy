@@ -1,0 +1,131 @@
+.title {
+  display: none;
+}
+
+.item {
+  background: none;
+}
+
+.wrap {
+  width: 100%;
+}
+
+.item {
+  display: flex;
+
+  padding-bottom: 14px;
+  padding-top: 14px;
+}
+
+.link {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  color: var(--primary-text-color);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 2.52px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.btn {
+  width: 100%;
+  font-size: 14px;
+
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 2.52px;
+  text-transform: uppercase;
+
+  background: none;
+  padding: 14px 17px 14px 0;
+  border: none;
+  color: var(--primary-text-color);
+  &:hover,
+  &:focus {
+    color: var(--secondary-text-color);
+  }
+}
+
+.mobiletextFields {
+  text-align: left;
+}
+
+.desktopTextFields {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .item {
+    width: calc(50% - 8px);
+    border-radius: 16px;
+    padding: 0 24px;
+  }
+
+  .wrap {
+    height: 180px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .title {
+    display: block;
+    text-align: center;
+    color: var(--primary-text-color);
+  }
+
+  .mobiletextFields {
+    display: none;
+  }
+
+  .desktopTextFields {
+    display: block;
+  }
+
+  .link {
+    display: flex;
+    gap: 8px;
+    text-decoration: none;
+    color: var(--primary-text-color);
+
+    font-size: 14px;
+
+    font-weight: 600;
+    line-height: 1.5;
+  }
+
+  .btn {
+    width: 116px;
+
+    border: 1px solid var(--primary-text-color);
+    border-radius: 16px;
+    padding: 8px 24px;
+    font-style: normal;
+    text-transform: none;
+    &:hover,
+    &:focus {
+      border-color: var(--secondary-text-color);
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .item {
+    width: calc(25% - 12px);
+    padding: 0 40px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .item {
+    height: 236px;
+  }
+}

@@ -33,4 +33,5 @@ type Service = {
       serviceName: string;
     };
   };
+  img: StaticImageData;
 };
