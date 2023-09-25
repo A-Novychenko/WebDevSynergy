@@ -40,7 +40,7 @@ export const ServicesItem = ({
         background: isWideScreen
           ? `linear-gradient(0deg, rgba(3, 7, 18, 0.80) 0%, rgba(3, 7, 18, 0.80) 100%), url(${background}) `
           : `#030712`,
-        backgroundSize: "cover",
+        backgroundSize: isWideScreen ? "cover" : "auto",
       }}>
       <div className={styles.wrap}>
         <span className={styles.title}>{serviceName}</span>
