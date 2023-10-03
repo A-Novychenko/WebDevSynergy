@@ -9,6 +9,7 @@ import linkedin from '../public/Ourteam/social_linkedin.svg'
 import telegram from '../public/Ourteam/telegram.svg'
 import github from '../public/Ourteam/github.svg'
 import resume from '../public/Ourteam/resume.svg'
+import behance from '../public/svg/evaBehance.svg'
 
 
 export const arrayTeam = [
@@ -166,7 +167,7 @@ export const arrayTeam = [
             url: "https://t.me/juliakopytko",
         },
         github: {
-            github,
+            github: behance,
             url: "https://www.behance.net/juliakopytko"
         },
         resume: {
