@@ -17,10 +17,22 @@ type Person = {
   id: number;
   img: StaticImageData;
   profession: string;
-  linkedin: string;
-  telegram: string;
-  github: string;
-  resume: string;
+  linkedin: {
+    linkedin: string;
+    url:string
+  };
+  telegram: {
+    telegram: string;
+    url: string;
+  };
+  github: {
+    github: string;
+    url: string;
+  };
+  resume: {
+    resume: string;
+    url: string;
+  };
 };
 
 type Service = {

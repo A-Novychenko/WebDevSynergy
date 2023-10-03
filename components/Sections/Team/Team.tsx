@@ -8,7 +8,7 @@ type TeamProps = {
   teams: Dictionaries;
 };
 
-export const Team = ({arrayTeam, lang, teams}: TeamProps) => {
+export const Team = ({ arrayTeam, lang, teams }: TeamProps) => {
   return (
     <div className={styles.container}>
       <section className={styles.section}>
@@ -41,24 +41,24 @@ export const Team = ({arrayTeam, lang, teams}: TeamProps) => {
                     {team.profession}
                   </p>
                   <ul className={styles.wraper_social}>
-                    <li key={team.linkedin}>
-                      <a href="#">
-                        <Image src={team.linkedin} alt={"linkedin"} />
+                    <li className={styles.social_hover} key={team.linkedin.linkedin}>
+                      <a href={team.linkedin.url} target="_blank">
+                        <Image src={team.linkedin.linkedin} alt={"linkedin"} />
                       </a>
                     </li>
-                    <li key={team.telegram}>
-                      <a href="#">
-                        <Image src={team.telegram} alt={"telegram"} />{" "}
+                    <li className={styles.social_hover} key={team.telegram.telegram}>
+                      <a href={team.telegram.url} target="_blank">
+                        <Image src={team.telegram.telegram} alt={"telegram"} />{" "}
                       </a>
                     </li>
-                    <li key={team.github}>
-                      <a href="#">
-                        <Image src={team.github} alt={"github"} />
+                    <li className={styles.social_hover} key={team.github.github}>
+                      <a href={team.github.url} target="_blank">
+                        <Image src={team.github.github} alt={"github"} />
                       </a>
                     </li>
-                    <li key={team.resume}>
-                      <a href="#">
-                        <Image src={team.resume} alt={"resume"} />
+                    <li className={styles.social_hover} key={team.resume.resume}>
+                      <a href={team.resume.url} target="_blank">
+                        <Image src={team.resume.resume} alt={"resume"} />
                       </a>
                     </li>
                   </ul>

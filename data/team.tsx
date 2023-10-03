@@ -20,10 +20,22 @@ export const arrayTeam = [
         id: 1,
         img: novichenko,
         profession: 'Fullstack developer, Team Lead',
-        linkedin: linkedin,
-        telegram: telegram,
-        github: github,
-        resume: resume,
+        linkedin: {
+            linkedin,
+            url: "https://www.linkedin.com/in/oleksandr-novychenko/",
+        },
+        telegram: {
+            telegram,
+            url: "https://t.me/NovychenkoA",
+        },
+        github: {
+            github,
+            url: "https://github.com/A-Novychenko"
+        },
+        resume: {
+            resume,
+            url: "",
+        },
 
     },
     {
@@ -35,10 +47,22 @@ export const arrayTeam = [
         img: kharlan,
         name: '',
         profession: 'Frontend Developer, Product Manager',
-        linkedin: linkedin,
-        telegram: telegram,
-        github: github,
-        resume: resume,
+        linkedin: {
+            linkedin,
+            url: "https://www.linkedin.com/in/eduard-kharlan-67a199264/",
+        },
+        telegram: {
+            telegram,
+            url: "https://t.me/edkharlan",
+        },
+        github: {
+            github,
+            url: "https://github.com/KharlanEd"
+        },
+        resume: {
+            resume,
+            url: "",
+        },
 
     },
     {
@@ -50,10 +74,22 @@ export const arrayTeam = [
         img: borysov,
         name: '',
         profession: 'Fullstack developer, Scrum Master',
-        linkedin: linkedin,
-        telegram: telegram,
-        github: github,
-        resume: resume,
+        linkedin: {
+            linkedin,
+            url: "https://www.linkedin.com/in/oleksandr-novychenko/",
+        },
+        telegram: {
+            telegram,
+            url: "https://t.me/NovychenkoA",
+        },
+        github: {
+            github,
+            url: "https://github.com/A-Novychenko"
+        },
+        resume: {
+            resume,
+            url: "",
+        },
 
     },
     {
@@ -65,10 +101,22 @@ export const arrayTeam = [
         img: veryk,
         name: '',
         profession: 'Frontend Developer, Manual QA Engineer',
-        linkedin: linkedin,
-        telegram: telegram,
-        github: github,
-        resume: resume,
+        linkedin: {
+            linkedin,
+            url: "https://www.linkedin.com/in/olexandr-veryk",
+        },
+        telegram: {
+            telegram,
+            url: "https://t.me/AlexVeryk",
+        },
+        github: {
+            github,
+            url: "https://github.com/alexveryk"
+        },
+        resume: {
+            resume,
+            url: "",
+        },
 
     },
     {
@@ -82,10 +130,22 @@ export const arrayTeam = [
         img: babenko,
         name: '',
         profession: 'Front-end Developer, Content Manager',
-        linkedin: linkedin,
-        telegram: telegram,
-        github: github,
-        resume: resume,
+        linkedin: {
+            linkedin,
+            url: "https://www.linkedin.com/in/vitababenko/",
+        },
+        telegram: {
+            telegram,
+            url: "https://t.me/babenkovita",
+        },
+        github: {
+            github,
+            url: "https://github.com/VitaBabenko"
+        },
+        resume: {
+            resume,
+            url: "",
+        },
 
     },
     {
@@ -97,10 +157,22 @@ export const arrayTeam = [
         img: kopytko,
         name: '',
         profession: 'UX/UI Designer',
-        linkedin: linkedin,
-        telegram: telegram,
-        github: github,
-        resume: resume,
+        linkedin: {
+            linkedin,
+            url: "https://pl.linkedin.com/in/juliakopytko",
+        },
+        telegram: {
+            telegram,
+            url: "https://t.me/juliakopytko",
+        },
+        github: {
+            github,
+            url: "https://www.behance.net/juliakopytko"
+        },
+        resume: {
+            resume,
+            url: "",
+        },
 
     },
 ]

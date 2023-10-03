@@ -14,6 +14,10 @@
     padding-bottom: 80px;
   }               
 }
+
+.social_hover:hover{
+  transform: var(--scale-transform-hover);
+}
 .container{
     max-width: 375px;
     margin-left: auto;
