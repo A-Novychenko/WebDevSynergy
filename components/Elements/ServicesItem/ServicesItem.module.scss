@@ -80,6 +80,11 @@
     display: block;
     text-align: center;
     color: var(--primary-text-color);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.71;
+    letter-spacing: 0.84px;
+    text-transform: uppercase;
   }
 
   .mobiletextFields {
@@ -127,5 +132,11 @@
 @media screen and (min-width: 1920px) {
   .item {
     height: 236px;
+  }
+
+  .title {
+    font-size: 20px;
+    line-height: 1.6;
+    letter-spacing: 0.8px;
   }
 }
