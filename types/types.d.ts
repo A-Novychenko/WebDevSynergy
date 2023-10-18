@@ -19,7 +19,7 @@ type Person = {
   profession: string;
   linkedin: {
     linkedin: string;
-    url:string
+    url: string;
   };
   telegram: {
     telegram: string;
@@ -46,4 +46,12 @@ type Service = {
     };
   };
   img: StaticImageData;
+};
+
+type Project = {
+  id: number;
+  poster: any;
+  title: string;
+  discription: string;
+  techIcon: any[];
 };
