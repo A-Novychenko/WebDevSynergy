@@ -52,6 +52,6 @@ type Project = {
   id: number;
   poster: any;
   title: string;
-  discription: string;
+  discription: {en: string; uk: string};
   techIcon: any[];
 };
