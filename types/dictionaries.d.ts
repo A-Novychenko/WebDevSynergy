@@ -7,6 +7,7 @@ type Dictionaries = {
     technologies: Technologies;
     service: dictionaryServices;
     hero: Hero;
+    project: ProjectsSection;
   };
 };
 
@@ -64,4 +65,10 @@ type dictionaryServices = {
   subHeader: string;
   description: string;
   otherServices: string;
+};
+
+type ProjectsSection = {
+  subtitle: string;
+  title: string;
+  description: string;
 };

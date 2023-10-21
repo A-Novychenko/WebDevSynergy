@@ -45,6 +45,11 @@
       "subHeader": "Services",
       "description": "Explore the following core services we specialize in, each crafted with expertise and creativity to drive your success.",
       "otherServices": "Other services"
+    },
+    "project": {
+      "subtitle": "we believe that every project is an opportunity to make a difference",
+      "title": "projects",
+      "description": "Welcome to a showcase of our remarkable projects that exemplify our commitment to innovation, quality, and creativity. With a passion for excellence, we've brought ideas to life, solving challenges and exceeding expectations every step of the way."
     }
   }
 }

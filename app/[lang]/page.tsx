@@ -30,7 +30,7 @@ export default async function Home({params: {lang}}: {params: {lang: Locale}}) {
 
       <Contact dictionary={dictionary} />
 
-      <Project lang={lang} />
+      <Project lang={lang} project={dictionary} />
     </>
   );
 }
