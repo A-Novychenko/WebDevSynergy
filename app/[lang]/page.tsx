@@ -10,7 +10,7 @@ import {Team} from "@/components/Sections/Team/Team";
 import {arrayTeam} from "@/data/team";
 import {Services} from "@/components/Sections/Services/Services";
 import {arrayServices} from "@/data/services";
-import {BannerSwiper} from "@/components/Elements/ProjectsSwiper/testSwiper";
+
 import {Project} from "@/components/Sections/Projects/Project";
 
 export default async function Home({params: {lang}}: {params: {lang: Locale}}) {
@@ -30,7 +30,7 @@ export default async function Home({params: {lang}}: {params: {lang: Locale}}) {
 
       <Contact dictionary={dictionary} />
 
-      <Project lang={lang} />
+      <Project lang={lang} project={dictionary} />
     </>
   );
 }
