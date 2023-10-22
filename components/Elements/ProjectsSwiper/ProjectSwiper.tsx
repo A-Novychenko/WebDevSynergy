@@ -47,7 +47,7 @@ export const ProjectSwiper = ({lang = "en"}: {lang: Locale}) => {
                 <p className={styles.title}>{title}</p>
                 <p className={styles.description}>{discription[lang]}</p>
                 <ul>
-                  {techIcon.map((icon, index) => { return (<li><Image key={index} src={icon} alt={icon} width={24} height={24} /></li>) })}
+                  {techIcon.map((icon, index) => { return (<li key={index}><Image  src={icon} alt={icon} width={24} height={24} /></li>) })}
                   </ul>
                 <NavLink href="/" style={{color: "white"}}>Read more</NavLink>
               </SwiperSlide>
