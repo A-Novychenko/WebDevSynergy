@@ -31,7 +31,7 @@ export const projects: Project[] = [
     poster: taskProPoster,
     title: "Task Pro",
     discription: {
-      en: "Application for time management. The minimalistic and intuitive interface allows you to create tasks with priority and deadline ...",
+      en: "Application for time management. The minimalistic and intuitive interface allows you to create tasks with priority and deadline, as well as group them into columns and separate boards..",
       uk: "Додаток для керування завданнями. Мінімалістичний та інтуїтивний інтерфейс дозволяє створювати завдання з вказівкою пріоритету та крайнього дедлайном...",
     },
     techIcon: [react, redux, material, styled, vite, axios],
@@ -61,7 +61,7 @@ export const projects: Project[] = [
     poster: webstudioPoster,
     title: "Web studio",
     discription: {
-      en: "The website helps to attract new customers. It tells about the activities of the company and its employees, presents the range ...",
+      en: "The website helps to attract new customers. It tells about the activities of the company and its employees, presents the range of services and the possibility to order them. ",
       uk: "Цей веб-сайт допомагає привернути нових клієнтів. Він розповідає про діяльність компанії та її співробітників, представляє асортимент...",
     },
     techIcon: [html, css, sass, js, figma],
@@ -71,7 +71,7 @@ export const projects: Project[] = [
     poster: iceCreamPoster,
     title: "Ice creame",
     discription: {
-      en: "ICE CREAM MADE WITH PASSION is more than just ice cream. It's a place where the genuine passion for crafting the tastiest desserts comes to life...",
+      en: "ICE CREAM MADE WITH PASSION is more than just ice cream. It's a place where the genuine passion for crafting the tastiest desserts comes to life. Our mission...",
       uk: "МОРОЗИВО З ДУШОЮ - це більше, ніж просто морозиво. Це місце, де справжня пристрасть до створення найсмачніших десертів оживає...",
     },
     techIcon: [html, css, sass, js, figma, parcel],

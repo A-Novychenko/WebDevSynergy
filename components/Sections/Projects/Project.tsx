@@ -11,11 +11,11 @@ export const Project = ({ lang, project }: ProjectProops) => {
   return (
     <section className={styles.section}>
       <div className={styles.container}>
-        <p style={{ color: "white" }}>
+        <p className={styles.subtitle}>
           {project["server-component"].project.subtitle}
         </p>
-        <h2 style={{ color: "white" }}>{project["server-component"].project.title}</h2>
-        <p style={{ color: "white" }}>{project["server-component"].project.description}</p>
+        <h2 className={styles.title}>{project["server-component"].project.title}</h2>
+        <p className={styles.description}>{project["server-component"].project.description}</p>
         <ProjectSwiper lang={lang} />
       </div>
     </section>

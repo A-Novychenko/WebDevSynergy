@@ -1,0 +1,35 @@
+
+.wrapper {
+    width: 544px;
+    border: 1px solid white;
+}
+
+.image {
+    width: 544px;
+    height: 360px;
+    display: block;
+    object-fit: cover;
+}
+
+.title {
+    margin-bottom: 20px;
+
+    color: var(--primary-text-color);
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 1.5;
+        letter-spacing: -0.64px;
+        text-transform: uppercase;
+}
+
+.description {
+margin-bottom: 8px;
+
+    color: var(--primary-text-color);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 2;
+        /* 200% */
+}
