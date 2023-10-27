@@ -1,12 +1,17 @@
-import {getDictionary} from "@/get-dictionary";
-import {Locale} from "../../../i18n-config";
+import { getDictionary } from "@/get-dictionary";
+import { Locale } from "../../../i18n-config";
+import { Contact } from "@/components/Sections/Contact/Contact";
 
 export default async function ServicesPage({
-  params: {lang},
+  params: { lang },
 }: {
-  params: {lang: Locale};
+  params: { lang: Locale };
 }) {
   const dictionary = await getDictionary(lang);
 
-  return <h1 style={{color: "white", textAlign: "center"}}> Services </h1>;
+  return (
+    <>
+      <Contact dictionary={dictionary} />
+    </>
+  )
 }
