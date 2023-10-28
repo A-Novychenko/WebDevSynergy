@@ -1,4 +1,4 @@
-import type {Metadata} from "next";
+import type {Metadata, ResolvingMetadata} from "next";
 import {Roboto} from "next/font/google";
 
 import {Locale} from "../../i18n-config";
@@ -16,10 +16,25 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "WDS | Home",
   description:
     "WebDevSynergy (WDS) - web studio for the development of design and sites. Design, landing, corporate sites, web applications",
 };
+
+type Props = {
+  params: {lang: "uk" | "en"};
+  searchParams: {[key: string]: string | string[] | undefined};
+};
+
+export async function generateMetadata(
+  {params, searchParams}: Props,
+  parent: ResolvingMetadata
+): Promise<Metadata> {
+  const lang = params.lang;
+
+  return {
+    title: `WDS | ${lang === "en" ? "Home" : "Головна"}`,
+  };
+}
 
 export default function RootLayout({
   children,
