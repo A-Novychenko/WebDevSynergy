@@ -29,6 +29,8 @@ export async function generateMetadata(
 
   return {
     title: `WDS | ${person?.textFields[lang].firstName} ${person?.textFields[lang].lastName}`,
+    description:
+      "WebDevSynergy (WDS) - web studio for the development of design and sites. Design, landing, corporate sites, web applications",
   };
 }
 

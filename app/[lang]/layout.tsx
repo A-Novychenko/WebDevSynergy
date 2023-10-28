@@ -1,4 +1,4 @@
-import type {Metadata} from "next";
+// import type {Metadata} from "next";
 import {Roboto} from "next/font/google";
 
 import {Locale} from "../../i18n-config";
@@ -15,11 +15,11 @@ const roboto = Roboto({
   weight: ["400", "500", "700", "900"],
 });
 
-export const metadata: Metadata = {
-  title: "WDS | Home",
-  description:
-    "WebDevSynergy (WDS) - web studio for the development of design and sites. Design, landing, corporate sites, web applications",
-};
+// export const metadata: Metadata = {
+//   title: "WDS | Home",
+//   description:
+//     "WebDevSynergy (WDS) - web studio for the development of design and sites. Design, landing, corporate sites, web applications",
+// };
 
 export default function RootLayout({
   children,
