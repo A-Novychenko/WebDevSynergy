@@ -1,3 +1,5 @@
+import type {Metadata, ResolvingMetadata} from "next";
+
 import {getDictionary} from "../../get-dictionary";
 import {Locale} from "../../i18n-config";
 import {Hero} from "@/components/Sections/HomePage/Hero/Hero";
@@ -12,6 +14,27 @@ import {Services} from "@/components/Sections/HomePage/Services/Services";
 import {arrayServices} from "@/data/services";
 
 import {Project} from "@/components/Sections/HomePage/Projects/Project";
+
+export const metadata: Metadata = {
+  description:
+    "WebDevSynergy (WDS) - web studio for the development of design and sites. Design, landing, corporate sites, web applications",
+};
+
+type Props = {
+  params: {lang: "uk" | "en"};
+  searchParams: {[key: string]: string | string[] | undefined};
+};
+
+export async function generateMetadata(
+  {params, searchParams}: Props,
+  parent: ResolvingMetadata
+): Promise<Metadata> {
+  const lang = params.lang;
+
+  return {
+    title: `WDS | ${lang === "en" ? "Home" : "Головна"}`,
+  };
+}
 
 export default async function Home({params: {lang}}: {params: {lang: Locale}}) {
   const dictionary = await getDictionary(lang);
