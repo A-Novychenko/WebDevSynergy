@@ -15,11 +15,6 @@ import {arrayServices} from "@/data/services";
 
 import {Project} from "@/components/Sections/HomePage/Projects/Project";
 
-export const metadata: Metadata = {
-  description:
-    "WebDevSynergy (WDS) - web studio for the development of design and sites. Design, landing, corporate sites, web applications",
-};
-
 type Props = {
   params: {lang: "uk" | "en"};
   searchParams: {[key: string]: string | string[] | undefined};
