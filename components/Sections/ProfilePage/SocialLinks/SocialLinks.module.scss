@@ -1,0 +1,45 @@
+.social_wrap {
+  display: flex;
+  gap: 24px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.social_link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  width: 402px;
+  height: 56px;
+  padding: 14px 24px;
+
+  text-decoration: none;
+
+  border-radius: 16px;
+  border: 1px solid var(--primary-text-color, #f6f7f9);
+
+  transition: transform var(--animation-hover), color var(--animation-hover),
+    background-color var(--animation-hover);
+
+  &:hover,
+  &link:focus {
+    color: var(--secondary-text-color);
+    transform: var(--scale-transform-hover);
+    background: rgba(246, 247, 249, 0.2);
+  }
+}
+
+.social_link_text {
+  display: inline-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--primary-text-color, #f6f7f9);
+
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+}
