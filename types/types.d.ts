@@ -4,19 +4,12 @@ type BurgerProps = {
 };
 
 type Person = {
-  textFields: {
-    uk: {
-      firstName: string;
-      lastName: string;
-    };
-    en: {
-      firstName: string;
-      lastName: string;
-    };
-  };
+  textFields: TeamNameType;
   id: number;
   img: StaticImageData;
+  imgAbout: StaticImageData;
   profession: string;
+  address: AddresType;
   linkedin: {
     linkedin: string;
     url: string;
@@ -33,6 +26,23 @@ type Person = {
     resume: string;
     url: string;
   };
+  profile: {summary: TeamSummaryType; aboutMe: AboutMeType};
+};
+
+type TeamNameType = {
+  [key: string]: {
+    firstName: string;
+    lastName: string;
+  };
+};
+type AddresType = {
+  [key: string]: string;
+};
+type TeamSummaryType = {
+  [key: string]: string;
+};
+type AboutMeType = {
+  [key: string]: string;
 };
 
 type Service = {

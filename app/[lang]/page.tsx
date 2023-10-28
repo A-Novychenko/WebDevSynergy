@@ -1,17 +1,17 @@
 import {getDictionary} from "../../get-dictionary";
 import {Locale} from "../../i18n-config";
-import {Hero} from "@/components/Sections/Hero/Hero";
+import {Hero} from "@/components/Sections/HomePage/Hero/Hero";
 
-import {Contact} from "@/components/Sections/Contact/Contact";
+import {Contact} from "@/components/Sections/HomePage/Contact/Contact";
 
 import {arraySkills} from "@/data/skills";
-import {Technologies} from "@/components/Sections/Technologies/Technologies";
-import {Team} from "@/components/Sections/Team/Team";
+import {Technologies} from "@/components/Sections/HomePage/Technologies/Technologies";
+import {Team} from "@/components/Sections/HomePage/Team/Team";
 import {arrayTeam} from "@/data/team";
-import {Services} from "@/components/Sections/Services/Services";
+import {Services} from "@/components/Sections/HomePage/Services/Services";
 import {arrayServices} from "@/data/services";
 
-import {Project} from "@/components/Sections/Projects/Project";
+import {Project} from "@/components/Sections/HomePage/Projects/Project";
 
 export default async function Home({params: {lang}}: {params: {lang: Locale}}) {
   const dictionary = await getDictionary(lang);
