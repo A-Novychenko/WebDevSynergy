@@ -21,7 +21,7 @@ import behance from "../public/svg/evaBehance.svg";
 export const arrayTeam = [
   {
     textFields: {
-      uk: {firstName: "Олександр", lastName: "Новіченко"},
+      uk: {firstName: "Олександр", lastName: "Новиченко"},
       en: {firstName: "Oleksandr", lastName: "Novychenko"},
     },
     id: 1,

@@ -1,3 +1,5 @@
+import type {Metadata, ResolvingMetadata} from "next";
+
 import {getDictionary} from "@/get-dictionary";
 import {arrayTeam} from "@/data/team";
 import {arraySkills} from "@/data/skills";
@@ -9,6 +11,26 @@ import {Project} from "@/components/Sections/HomePage/Projects/Project";
 import {Technologies} from "@/components/Sections/HomePage/Technologies/Technologies";
 
 import styles from "./styles.module.scss";
+
+type Props = {
+  params: {id: string; lang: "uk" | "en"};
+  searchParams: {[key: string]: string | string[] | undefined};
+};
+
+export async function generateMetadata(
+  {params, searchParams}: Props,
+  parent: ResolvingMetadata
+): Promise<Metadata> {
+  const id = params.id;
+  const lang = params.lang;
+  const person = arrayTeam.find(
+    (person) => person.id.toString() === id.toString()
+  );
+
+  return {
+    title: `WDS | ${person?.textFields[lang].firstName} ${person?.textFields[lang].lastName}`,
+  };
+}
 
 export default async function ProfilePage({
   params: {id, lang},
