@@ -4,20 +4,26 @@
 }
 
 .content_box {
-  display: flex;
-  column-gap: 24px;
-  padding-top: 128px;
-  padding-bottom: 128px;
+  @media screen and (min-width: 1920px) {
+    display: flex;
+    column-gap: 24px;
+    padding-top: 128px;
+    padding-bottom: 128px;
+  }
 }
 
 .photo_wrap {
-  width: 544px;
-  height: 544px;
+  width: 327px;
+  height: 327px;
 
   border-radius: 16px;
   background: lightgray 50% / cover no-repeat;
 
   overflow: hidden;
+  @media screen and (min-width: 1920px) {
+    width: 544px;
+    height: 544px;
+  }
 }
 
 .photo {
@@ -29,7 +35,16 @@
 }
 
 .text_box {
-  width: 1112px;
+  // width: 1112px;
+  padding-top: 40px;
+  padding-bottom: 24px;
+  @media screen and (min-width: 768px) {
+    padding: 0;
+    width: 444px;
+  }
+  @media screen and (min-width: 1920px) {
+    width: 1112px;
+  }
 }
 
 .address {

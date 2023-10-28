@@ -1,13 +1,26 @@
 .content_box {
-  display: flex;
-  align-items: center;
-  column-gap: 24px;
-  padding-top: 128px;
-  padding-bottom: 128px;
+  @media screen and (min-width: 1280px) {
+  }
+  @media screen and (min-width: 1920px) {
+    display: flex;
+    align-items: center;
+    column-gap: 24px;
+    padding-top: 128px;
+    padding-bottom: 128px;
+  }
 }
 
 .text_box {
-  width: 1112px;
+  // width: 1112px;
+  padding-top: 32px;
+  padding-bottom: 40px;
+  @media screen and (min-width: 768px) {
+    padding: 0;
+    width: 444px;
+  }
+  @media screen and (min-width: 1920px) {
+    width: 1112px;
+  }
 }
 
 .role {
@@ -49,6 +62,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   column-gap: 24px;
 }
 
@@ -91,13 +105,18 @@
 }
 
 .photo_wrap {
-  width: 544px;
-  height: 544px;
+  width: 327px;
+  height: 327px;
 
   border-radius: 16px;
   background: lightgray 50% / cover no-repeat;
 
   overflow: hidden;
+
+  @media screen and (min-width: 1920px) {
+    width: 544px;
+    height: 544px;
+  }
 }
 
 .photo {

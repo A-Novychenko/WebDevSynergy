@@ -3,6 +3,7 @@
   gap: 24px;
   padding-top: 80px;
   padding-bottom: 80px;
+  flex-wrap: wrap;
 }
 
 .social_link {
@@ -10,7 +11,7 @@
   justify-content: center;
   align-items: center;
   gap: 8px;
-  width: 402px;
+  width: 327px;
   height: 56px;
   padding: 14px 24px;
 
@@ -21,6 +22,10 @@
 
   transition: transform var(--animation-hover), color var(--animation-hover),
     background-color var(--animation-hover);
+
+  @media screen and (min-width: 1920px) {
+    width: 402px;
+  }
 
   &:hover,
   &link:focus {

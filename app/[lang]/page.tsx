@@ -28,6 +28,8 @@ export async function generateMetadata(
 
   return {
     title: `WDS | ${lang === "en" ? "Home" : "Головна"}`,
+    description:
+      "WebDevSynergy (WDS) - web studio for the development of design and sites. Design, landing, corporate sites, web applications",
   };
 }
 
