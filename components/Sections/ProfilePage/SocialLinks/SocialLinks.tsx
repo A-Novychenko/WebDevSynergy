@@ -58,7 +58,7 @@ export const SocialLinks = ({person, lang}: SocialLinksProps) => {
               width={24}
               height={24}
             />
-            <span className={styles.social_link_text}>github</span>
+            <span className={styles.social_link_text}>{person?.textFields.en.lastName==="Kopytko"?"behance":"github"}</span>
             <Image src={arrow_icon} alt={"arrow"} width={24} height={24} />
           </Link>
         </li>

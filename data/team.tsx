@@ -230,7 +230,7 @@ export const arrayTeam = [
   {
     textFields: {
       uk: {firstName: "Юлія", lastName: "Копитко"},
-      en: {firstName: "Julia ", lastName: " Kopytko"},
+      en: {firstName: "Julia ", lastName: "Kopytko"},
     },
     id: 6,
     img: kopytko,
