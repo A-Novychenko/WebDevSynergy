@@ -4,6 +4,7 @@ import borysov from "../public/Ourteam/Borysov.png";
 import veryk from "../public/Ourteam/Veryk.png";
 import babenko from "../public/Ourteam/Babenko.png";
 import kopytko from "../public/Ourteam/Kopytko.png";
+import but from "../public/Ourteam/but.jpg";
 
 // import o_novichenko from "../public/Ourteam/AboutMeSetions";
 // import e_kharlan from "../public/Ourteam/AboutMeSetions";
@@ -11,6 +12,7 @@ import s_borysov from "../public/Ourteam/AboutMeSetions/s_borysov.jpg";
 // import o_veryk from "../public/Ourteam/AboutMeSetions";
 // import v_babenko from "../public/Ourteam/AboutMeSetions";
 import j_kopytko from "../public/Ourteam/AboutMeSetions/j_kopytko.jpg";
+// import k_but from "../public/Ourteam/AboutMeSetions/k_but.jpg";
 
 import linkedin from "../public/Ourteam/social_linkedin.svg";
 import telegram from "../public/Ourteam/telegram.svg";
@@ -265,6 +267,47 @@ export const arrayTeam = [
       aboutMe: {
         uk: "Привіт! Я Юлія, дизайнер UX/UI із пристрастю до створення цифрового досвіду, який робить життя простішим і приємнішим. Керуючись пристрастю, я підходжу до кожного проекту з ентузіазмом і рішучістю досягти найкращого. За межами світу дизайну я знаходжу радість у подорожах і фотографуванні моментів життя. Дослідження нових місць і культур стимулює мою творчість і розширює моє розуміння естетики дизайну. Родом з України, я знайшла другий дім у Польщі, збагативши свій погляд на дизайн через різноманітний культурний досвід. Давайте об’єднатися та дослідити, як ми можемо співпрацювати!",
         en: "Hey there! I'm Julia, UX/UI designer with a passion for crafting digital experiences that make life easier and more enjoyable. Driven by passion, I approach each project with enthusiasm and a determination to deliver the best.Outside the world of design, I find joy in traveling and capturing life's moments through photography. Exploring new places and cultures fuels my creativity and broadens my understanding of design aesthetics. Originally from Ukraine, I have found a second home in Poland, enriching my perspective on design through diverse cultural experiences.Let's connect and explore how we can collaborate!",
+      },
+    },
+  },
+  {
+    textFields: {
+      uk: { firstName: "Катерина", lastName: "Бут" },
+      en: { firstName: "Kateryna ", lastName: "But" },
+    },
+    id: 7,
+    img: but,
+    imgAbout: but,
+    address: {
+      uk: "Кривий Ріг, Україна",
+      en: "Kriviy Rig",
+    },
+    name: "",
+    profession: "QA Engineer",
+    linkedin: {
+      linkedin,
+      url: "https://www.linkedin.com/in/katerina-but-a985b4291/",
+    },
+    telegram: {
+      telegram,
+      url: "https://t.me/but_katerina",
+    },
+    github: {
+      github: github,
+      url: "",
+    },
+    resume: {
+      resume,
+      url: "",
+    },
+    profile: {
+      summary: {
+        uk: "Я спеціалізуюся на веб-розробці, де я створюю адаптивні та зручні веб-сайти, які ідеально поєднують форму та функціонують. Від кодування елегантних зовнішніх інтерфейсів до оптимізації внутрішніх процесів, я процвітаю, втілюючи ідеї в реальність у цифровій сфері. Я також великий прихильник програмного забезпечення з відкритим вихідним кодом і вірю в те, щоб віддавати користь технічній спільноті.",
+        en: "I specialize in web development, where I create responsive and user-friendly websites that blend form and function seamlessly. From coding elegant front-end interfaces to optimizing back-end processes, I thrive on turning ideas into reality in the digital realm. I'm also a big advocate for open-source software and believe in giving back to the tech community.",
+      },
+      aboutMe: {
+        uk: "Я спеціалізуюся на веб-розробці, де я створюю адаптивні та зручні веб-сайти, які ідеально поєднують форму та функціональність. Від кодування елегантних зовнішніх інтерфейсів до оптимізації внутрішніх процесів, я прагну втілити ідеї в реальність у цифровій сфері. Я також великий прихильник програмного забезпечення з відкритим кодом і вірю в те, щоб віддавати користь технічній спільноті. Я спеціалізуюся на веб-розробці, де я створюю адаптивні та зручні веб-сайти, які ідеально поєднують форму та функціональність. Від кодування елегантних зовнішніх інтерфейсів до оптимізації внутрішніх процесів, я прагну втілити ідеї в реальність у цифровій сфері. Давайте зберемося разом і дізнаємося, як ми можемо співпрацювати!",
+        en: "I specialize in web development, where I create responsive and user-friendly websites that blend form and function seamlessly. From coding elegant front-end interfaces to optimizing back-end processes, I thrive on turning ideas into reality in the digital realm. I'm also a big advocate for open-source software and believe in giving back to the tech community. I specialize in web development, where I create responsive and user-friendly websites that blend form and function seamlessly. From coding elegant front-end interfaces to optimizing back-end processes, I thrive on turning ideas into reality in the digital realm. Let's connect and explore how we can collaborate!",
       },
     },
   },
