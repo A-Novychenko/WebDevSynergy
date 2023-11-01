@@ -50,9 +50,19 @@ type Service = {
   textFields: {
     uk: {
       serviceName: string;
+      price: string;
+      subtitle: string;
+      serciceTitle: string;
+      discription: string;
+      details: string[];
     };
     en: {
       serviceName: string;
+      price: string;
+      subtitle: string;
+      serciceTitle: string;
+      discription: string;
+      details: string[];
     };
   };
   img: StaticImageData;
