@@ -65,6 +65,7 @@ type dictionaryServices = {
   subHeader: string;
   description: string;
   otherServices: string;
+  moreServices: string;
 };
 
 type ProjectsSection = {

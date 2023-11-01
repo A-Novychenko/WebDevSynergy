@@ -11,12 +11,14 @@ type ServicesItemProps = {
   background: string;
   lang: "uk" | "en";
   serviceName: string;
+  moreServices: string;
 };
 
 export const ServicesItem = ({
   background,
   lang,
   serviceName,
+  moreServices,
 }: ServicesItemProps) => {
   const [isWideScreen, setIsWideScreen] = useState(false);
 
@@ -47,7 +49,7 @@ export const ServicesItem = ({
         <button className={styles.btn} type="button">
           <Link href={`/${lang}/services`} className={styles.link}>
             <span className={styles.mobiletextFields}>{serviceName}</span>
-            <span className={styles.desktopTextFields}>More</span>
+            <span className={styles.desktopTextFields}>{moreServices}</span>
             <Image
               className={styles.icon}
               src={arrow}

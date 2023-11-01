@@ -7,7 +7,7 @@ type HeroProps = {
   dictionary: Dictionaries;
 };
 
-export const Hero = ({dictionary, lang}: HeroProps) => {
+export const Hero = ({ dictionary, lang }: HeroProps) => {
   return (
     <section className={styles.section}>
       <div className={styles.container}>
@@ -27,7 +27,7 @@ export const Hero = ({dictionary, lang}: HeroProps) => {
           </p>
           <div className={styles.btnThumb}>
             <button className={styles.accentBtn} type="button">
-              <Link href={`/${lang}/projects`} className={styles.link}>
+              <Link href={`/${lang}/services`} className={styles.link}>
                 {dictionary["server-component"].hero.btnSecvice}
               </Link>
             </button>
