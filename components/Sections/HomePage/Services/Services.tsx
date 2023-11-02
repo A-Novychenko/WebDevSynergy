@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import arrow from "@/public/arrow.svg";
-import {ServicesItem} from "@/components/Elements/ServicesItem/ServicesItem";
+import { ServicesItem } from "@/components/Elements/ServicesItem/ServicesItem";
 
 import styles from "./Services.module.scss";
 
@@ -12,7 +12,7 @@ type ServicesProps = {
   services: Dictionaries;
 };
 
-export const Services = ({arrayServices, lang, services}: ServicesProps) => {
+export const Services = ({ arrayServices, lang, services }: ServicesProps) => {
   return (
     <section className={styles.section}>
       <div className={styles.container}>
@@ -37,19 +37,25 @@ export const Services = ({arrayServices, lang, services}: ServicesProps) => {
                 background={backgroundStyle.background.src}
                 lang={lang}
                 serviceName={service.textFields[lang].serviceName}
+                moreServices={services["server-component"].service.moreServices}
               />
             );
           })}
 
           <li key={"service"} className={`${styles.item} ${styles.itemBg}`}>
             <div className={styles.wrap}>
-              <span className={styles.title}>Other services</span>
+              <span className={styles.title}>
+                {/* Other services */}
+                {services["server-component"].service.otherServices}
+              </span>
               <button className={styles.btn} type="button">
                 <Link href={`/${lang}/services`} className={styles.link}>
                   <span className={styles.mobiletextFields}>
-                    Other services link
+                    {services["server-component"].service.otherServices}
                   </span>
-                  <span className={styles.desktopTextFields}>More</span>
+                  <span className={styles.desktopTextFields}>
+                    {services["server-component"].service.moreServices}
+                  </span>
                   <Image
                     className={styles.icon}
                     src={arrow}

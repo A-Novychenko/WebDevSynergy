@@ -34,7 +34,7 @@
     "hero": {
       "subtitle": "Where tech talent meets opportunity",
       "titleStart": "Top Tech Talent at ",
-      "titleEnd": "levate Your Team with Us",
+      "titleEnd": "elevate Your Team with Us",
       "accents": "Web Dev Synergy: ",
       "description": "We are a team of passionate developers and designers who thrive on turning ideas into reality. Our projects reflect our dedication to excellence and our commitment.",
       "btnSecvice": "Order service",
@@ -44,7 +44,8 @@
       "header": "Elevate your business in the digital realm",
       "subHeader": "Services",
       "description": "Explore the following core services we specialize in, each crafted with expertise and creativity to drive your success.",
-      "otherServices": "Other services"
+      "otherServices": "Other services",
+      "moreServices": "More"
     },
     "project": {
       "subtitle": "we believe that every project is an opportunity to make a difference",

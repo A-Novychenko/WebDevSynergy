@@ -26,7 +26,7 @@ type Person = {
     resume: string;
     url: string;
   };
-  profile: {summary: TeamSummaryType; aboutMe: AboutMeType};
+  profile: { summary: TeamSummaryType; aboutMe: AboutMeType };
 };
 
 type TeamNameType = {
@@ -72,6 +72,6 @@ type Project = {
   id: number;
   poster: any;
   title: string;
-  discription: {en: string; uk: string};
+  discription: { en: string; uk: string };
   techIcon: any[];
 };
