@@ -14,7 +14,7 @@ export const SocialLinks = ({person, lang}: SocialLinksProps) => {
   return (
     <section>
       <ul className={styles.social_wrap}>
-        <li key={person?.linkedin.url}>
+        <li className={ styles.link_item} key={person?.linkedin.url}>
           <Link
             className={styles.social_link}
             href={person?.linkedin.url}
@@ -30,7 +30,7 @@ export const SocialLinks = ({person, lang}: SocialLinksProps) => {
             <Image src={arrow_icon} alt={"arrow"} width={24} height={24} />
           </Link>
         </li>
-        <li key={person?.telegram.url}>
+        <li  className={ styles.link_item} key={person?.telegram.url}>
           <Link
             className={styles.social_link}
             href={person?.telegram.url}
@@ -46,7 +46,7 @@ export const SocialLinks = ({person, lang}: SocialLinksProps) => {
             <Image src={arrow_icon} alt={"arrow"} width={24} height={24} />
           </Link>
         </li>
-        <li key={person?.github.url}>
+        <li  className={ styles.link_item} key={person?.github.url}>
           <Link
             className={styles.social_link}
             href={person?.github.url}
@@ -62,7 +62,7 @@ export const SocialLinks = ({person, lang}: SocialLinksProps) => {
             <Image src={arrow_icon} alt={"arrow"} width={24} height={24} />
           </Link>
         </li>
-        <li key={person?.resume.url}>
+        <li  className={ styles.link_item} key={person?.resume.url}>
           <Link
             className={styles.social_link}
             href={person?.resume.url}

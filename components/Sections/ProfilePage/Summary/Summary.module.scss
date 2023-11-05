@@ -203,8 +203,13 @@
 
   overflow: hidden;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 475px) {
+    margin-right: auto;
+    margin-left: auto;
     margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 768px) {
     width: 260px;
     height: 260px;
   }
