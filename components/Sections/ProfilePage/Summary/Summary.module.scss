@@ -144,6 +144,9 @@
   line-height: 1.5;
   text-decoration: none;
 
+  transition: transform var(--animation-hover), color var(--animation-hover),
+    background-color var(--animation-hover);
+
   @media screen and (min-width: 768px) {
     width: 168px;
     margin-bottom: 0;
@@ -156,6 +159,14 @@
 
   @media screen and (min-width: 1920px) {
     width: 260px;
+  }
+
+  &:hover,
+  &link:focus {
+    color: var(--secondary-text-color);
+    transform: var(--scale-transform-hover);
+    background: rgba(246, 247, 249, 0.2);
+    border: 1px solid var(--primary-text-color, #f6f7f9);
   }
 }
 
@@ -178,6 +189,9 @@
   line-height: 1.5;
   text-decoration: none;
 
+  transition: transform var(--animation-hover), color var(--animation-hover),
+    background-color var(--animation-hover);
+
   @media screen and (min-width: 768px) {
     width: 168px;
     margin-bottom: 0;
@@ -190,6 +204,13 @@
 
   @media screen and (min-width: 1920px) {
     width: 260px;
+  }
+
+  &:hover,
+  &link:focus {
+    color: var(--secondary-text-color);
+    transform: var(--scale-transform-hover);
+    background: rgba(246, 247, 249, 0.2);
   }
 }
 
