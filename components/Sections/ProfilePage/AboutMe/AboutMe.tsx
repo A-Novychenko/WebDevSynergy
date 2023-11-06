@@ -23,7 +23,7 @@ export const AboutMe = ({person, lang}: AboutMeProps) => {
         </div>
         <div className={styles.text_box}>
           <p className={styles.address}>{person?.address[lang]}</p>
-          <h2 className={styles.sub_title}>
+          <h2 className={styles.subtitle}>
             {`${lang === "en" ? " About me" : "Про мене"} `}
           </h2>
           <p className={styles.descr}>{person?.profile.aboutMe[lang]}</p>
