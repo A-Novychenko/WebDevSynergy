@@ -22,7 +22,7 @@ export const ProjectSwiper = ({ lang = "en" }: { lang: Locale }) => {
   const slides: Project[] = projects;
   const swiperRef = useRef<any>(null);
 
-  console.log("lang", lang);
+  // console.log("lang", lang);
 
   return (
     <div>
@@ -38,22 +38,22 @@ export const ProjectSwiper = ({ lang = "en" }: { lang: Locale }) => {
         }}
         onSlideChange={() => console.log("slide change")}
         breakpoints={{
-        375: {
-          slidesPerView: 1,
-          pagination: true,
-        },
-        480: {
-          slidesPerView: 1,
-          pagination: true,
-        },
-        768: {
-          slidesPerView: 4,
-          slidesPerGroup: 4,
-        },
-        1280: {
-          slidesPerView: 3,
-          spaceBetween: 24,
-        },
+          375: {
+            slidesPerView: 1,
+            pagination: true,
+          },
+          480: {
+            slidesPerView: 1,
+            pagination: true,
+          },
+          768: {
+            slidesPerView: 4,
+            slidesPerGroup: 4,
+          },
+          1280: {
+            slidesPerView: 3,
+            spaceBetween: 24,
+          },
         }}
         className={styles.swiper_wrapper}
         // style={{ width: "100%", height: "241px" }}
@@ -86,7 +86,13 @@ export const ProjectSwiper = ({ lang = "en" }: { lang: Locale }) => {
                   className={styles.nav_link}
                 >
                   Read more
-                  <Image src={arrow} alt="arrow-icon" width={16} height={16} className={styles.arrow_icon} />
+                  <Image
+                    src={arrow}
+                    alt="arrow-icon"
+                    width={16}
+                    height={16}
+                    className={styles.arrow_icon}
+                  />
                 </NavLink>
               </SwiperSlide>
             );

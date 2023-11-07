@@ -75,3 +75,9 @@ type Project = {
   discription: { en: string; uk: string };
   techIcon: any[];
 };
+
+type ContactFormInputs = {
+  name: string;
+  email: string;
+  msg: string;
+};
