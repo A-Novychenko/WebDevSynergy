@@ -1,13 +1,8 @@
-// import Image from "next/image";
-
-// import ImgContact from "../../../public/image_contact.png";
-
-import { FormContact } from './FormContact';
+import { ContactForm } from "@/components/Elements/ContactForm/ContactForm";
 
 import styles from "./Contact.module.scss";
 
-export const Contact = ({dictionary}: {dictionary: Dictionaries}) => {
-
+export const Contact = ({ dictionary }: { dictionary: Dictionaries }) => {
   return (
     <section className={styles.section} id="contact">
       <div className={styles.container}>
@@ -22,12 +17,8 @@ export const Contact = ({dictionary}: {dictionary: Dictionaries}) => {
         </p>
         <div className={styles.wrap}>
           <div className={styles.image}></div>
-          {/* <Image
-            className={styles.image_contact}
-            src={ImgContact}
-            alt="Image contact"
-          /> */}
-          <FormContact dictionary={dictionary} />
+
+          <ContactForm dictionary={dictionary} />
         </div>
       </div>
     </section>

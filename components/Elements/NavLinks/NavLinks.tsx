@@ -1,9 +1,9 @@
 "use client";
 
 import Link from "next/link";
-import {usePathname} from "next/navigation";
+import { usePathname } from "next/navigation";
 
-import {Locale} from "@/i18n-config";
+import { Locale } from "@/i18n-config";
 
 import styles from "./NavLinks.module.scss";
 
@@ -26,7 +26,7 @@ const dictionary = {
   },
 };
 
-export const NavLinks = ({lang}: {lang: Locale}) => {
+export const NavLinks = ({ lang }: { lang: Locale }) => {
   const pathname = usePathname();
   const currentPath = pathname.slice(4);
 
@@ -36,7 +36,7 @@ export const NavLinks = ({lang}: {lang: Locale}) => {
         <li className={styles.link_item}>
           <Link
             href={`/${lang}/`}
-            style={{color: currentPath === "" ? "#0ad87a" : "#f6f7f9"}}
+            style={{ color: currentPath === "" ? "#0ad87a" : "#f6f7f9" }}
             className={styles.link}
           >
             {dictionary[`${lang}`].home}
@@ -45,7 +45,9 @@ export const NavLinks = ({lang}: {lang: Locale}) => {
         <li className={styles.link_item}>
           <Link
             href={`/${lang}/services`}
-            style={{color: currentPath === "services" ? "#0ad87a" : "#f6f7f9"}}
+            style={{
+              color: currentPath === "services" ? "#0ad87a" : "#f6f7f9",
+            }}
             className={styles.link}
           >
             {dictionary[`${lang}`].services}
@@ -54,7 +56,9 @@ export const NavLinks = ({lang}: {lang: Locale}) => {
         <li className={styles.link_item}>
           <Link
             href={`/${lang}/projects`}
-            style={{color: currentPath === "projects" ? "#0ad87a" : "#f6f7f9"}}
+            style={{
+              color: currentPath === "projects" ? "#0ad87a" : "#f6f7f9",
+            }}
             className={styles.link}
           >
             {dictionary[`${lang}`].projects}
@@ -86,19 +90,10 @@ export const NavLinks = ({lang}: {lang: Locale}) => {
         <li className={styles.link_item}>
           <Link
             href={`/${lang}/#contact`}
-            style={{color: currentPath === "contact" ? "#0ad87a" : "#f6f7f9"}}
+            style={{ color: currentPath === "contact" ? "#0ad87a" : "#f6f7f9" }}
             className={styles.link_contact}
           >
             {dictionary[`${lang}`].contact}
-          </Link>
-        </li>
-        <li className={styles.link_item}>
-          <Link
-            href={`/${lang}/TG_form`}
-            style={{color: currentPath === "TG_form" ? "#0ad87a" : "#f6f7f9"}}
-            className={styles.link}
-          >
-            TG
           </Link>
         </li>
       </ul>

@@ -102,27 +102,13 @@
   }
 }
 
-// .image_contact {
-//   width: 100%;
-
-//   @media screen and (min-width: 768px) {
-//     width: 40%;
-
-//     border-radius: 16px;
-
-//     object-fit: cover;
-//   }
-
-//   @media screen and (min-width: 1280px) {
-//     width: 100%;
-//   }
-// }
-
 .wrap {
   margin-top: 24px;
 
   @media screen and (min-width: 768px) {
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 16px;
 
     margin-top: 32px;
@@ -167,107 +153,5 @@
 
     width: 970px;
     height: 428px;
-  }
-}
-
-.form {
-  margin-top: 24px;
-
-  @media screen and (min-width: 768px) {
-    margin-top: 0;
-  }
-}
-
-.input {
-  margin-bottom: 16px;
-  padding: 24px;
-
-  border: none;
-  border-radius: 16px;
-
-  width: 100%;
-  height: 48px;
-
-  background-color: var(--primary-text-color);
-
-  &::placeholder {
-    font-size: var(--primary-text-size);
-    font-weight: 400;
-    line-height: 1.5;
-
-    color: var(--third-text-color);
-  }
-
-  @media screen and (min-width: 768px) {
-    margin-bottom: 16px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    height: 56px;
-  }
-
-  @media screen and (min-width: 1920px) {
-    margin-bottom: 24px;
-  }
-}
-
-.textarea {
-  margin-bottom: 16px;
-  padding: 24px;
-
-  border: none;
-  border-radius: 16px;
-
-  width: 100%;
-  height: 180px;
-  resize: none;
-
-  background-color: var(--primary-text-color);
-
-  &::placeholder {
-    font-size: var(--primary-text-size);
-    font-weight: 400;
-    line-height: 1.5;
-
-    color: var(--third-text-color);
-  }
-
-  @media screen and (min-width: 768px) {
-    margin-bottom: 24px;
-  }
-
-  @media screen and (min-width: 1920px) {
-    margin-bottom: 32px;
-  }
-}
-
-.button {
-  display: block;
-
-  padding: 14px 24px;
-
-  border: none;
-  border-radius: 16px;
-  cursor: pointer;
-
-  width: 100%;
-  height: 56px;
-
-  font-size: var(--primary-text-size);
-  font-weight: 600;
-  line-height: 1.5;
-
-  color: var(--third-text-color);
-  background-color: var(--secondary-text-color);
-
-  transition: transform var(--animation-hover);
-
-  &:hover,
-  &:focus {
-    transform: var(--scale-transform-hover);
-  }
-
-  @media screen and (min-width: 1280px) {
-    font-size: var(--secondary-text-size);
   }
 }

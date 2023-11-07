@@ -1,0 +1,163 @@
+.form {
+  position: relative;
+  margin-top: 24px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+    width: 444px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 508px;
+  }
+
+  @media screen and (min-width: 1920px) {
+    width: 686px;
+  }
+}
+
+.label {
+  position: relative;
+}
+
+.error {
+  position: absolute;
+  top: 0;
+  left: 24px;
+
+  padding: 2px;
+
+  color: red;
+  color: #fff;
+  font-size: 12px;
+
+  background-color: #f00;
+  border-radius: 6px;
+}
+
+.input {
+  margin-bottom: 16px;
+  padding: 24px;
+
+  border: none;
+  border-radius: 16px;
+
+  width: 100%;
+  height: 48px;
+
+  background-color: var(--primary-text-color);
+
+  &::placeholder {
+    font-size: var(--primary-text-size);
+    font-weight: 400;
+    line-height: 1.5;
+
+    color: var(--third-text-color);
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 16px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    height: 56px;
+  }
+
+  @media screen and (min-width: 1920px) {
+    margin-bottom: 24px;
+  }
+}
+
+.textarea {
+  margin-bottom: 16px;
+  padding: 24px;
+
+  border: none;
+  border-radius: 16px;
+
+  width: 100%;
+  height: 180px;
+  resize: none;
+
+  background-color: var(--primary-text-color);
+
+  &::placeholder {
+    font-size: var(--primary-text-size);
+    font-weight: 400;
+    line-height: 1.5;
+
+    color: var(--third-text-color);
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 24px;
+  }
+
+  @media screen and (min-width: 1920px) {
+    margin-bottom: 32px;
+  }
+}
+
+.button {
+  display: block;
+
+  padding: 14px 24px;
+
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+
+  width: 100%;
+  height: 56px;
+
+  font-size: var(--primary-text-size);
+  font-weight: 600;
+  line-height: 1.5;
+
+  color: var(--third-text-color);
+  background-color: var(--secondary-text-color);
+
+  transition: transform var(--animation-hover);
+
+  &:hover,
+  &:focus {
+    transform: var(--scale-transform-hover);
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: var(--secondary-text-size);
+  }
+}
+
+.loader_wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+
+  transform: scale(1.025);
+  background-color: rgba(124, 124, 124, 0.9);
+  border-radius: 16px;
+}
+
+.notify_wrap {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40;
+}
+
+.notify_msg {
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  padding: 40px;
+  border-radius: 40px;
+}
