@@ -26,7 +26,7 @@ import taskproApiPoster from "../public/images/poster/task-pro-restapi-poster.jp
 import phonebookPoster from "../public/images/poster/phonebook-poster.png";
 import cleaningServicekPoster from "../public/images/poster/CleaningServicekPoster.png";
 import supermarketPoster from "../public/images/poster/SupermarketPoster.png";
-import libraryPoster from "../public/images/poster/LibraryPoster.png";
+import libraryPoster from "../public/images/poster/libraryPoster.png";
 import iTSchooPoster from "../public/images/poster/ITSchooPoster.png";
 import landingPageWatchShopPoster from "../public/images/poster/LandingPageWatchShopPoster.png";
 import flowersDeliveryAppPoster from "../public/images/poster/FlowersDeliveryAppPoster.png";
