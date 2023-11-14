@@ -50,7 +50,10 @@
     "project": {
       "subtitle": "we believe that every project is an opportunity to make a difference",
       "title": "projects",
-      "description": "Welcome to a showcase of our remarkable projects that exemplify our commitment to innovation, quality, and creativity. With a passion for excellence, we've brought ideas to life, solving challenges and exceeding expectations every step of the way."
+      "description": "Welcome to a showcase of our remarkable projects that exemplify our commitment to innovation, quality, and creativity. With a passion for excellence, we've brought ideas to life, solving challenges and exceeding expectations every step of the way.",
+      "btnAll": "All Works",
+      "btnDeveloper": "Developer",
+      "btnDesign": "Design"
     }
   }
 }
