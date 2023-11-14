@@ -1,0 +1,285 @@
+@mixin btn-styles {
+  width: calc(100% / 3);
+  border: 1px solid var(--primary-text-color);
+  color: var(--primary-text-color);
+  background: transparent;
+  padding: 18px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.container {
+  width: 100%;
+  padding: 34px 24px 40px 24px;
+  color: var(--primary-text-color);
+}
+
+.projectItem {
+  width: 327px;
+  margin-bottom: 24px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.subHeader {
+  color: var(--secondary-text-color);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.42;
+  letter-spacing: 2.52px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.header {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.6;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+.description {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42;
+  margin-bottom: 24px;
+}
+
+.btn {
+  @include btn-styles;
+  &_left {
+    @include btn-styles;
+    border-radius: 8px 0px 0px 8px;
+    &.active {
+      background-color: var(--secondary-text-color);
+      color: var(--third-text-color);
+    }
+  }
+  &_right {
+    @include btn-styles;
+    border-radius: 0px 8px 8px 0px;
+    &.active {
+      background-color: var(--secondary-text-color);
+      color: var(--third-text-color);
+    }
+  }
+  &.active {
+    background-color: var(--secondary-text-color);
+    color: var(--third-text-color);
+  }
+}
+
+.btnWrapper {
+  margin-bottom: 24px;
+}
+
+.projectsImgThumb {
+  position: relative;
+  width: 327px;
+  height: 220px;
+  border-radius: 16px;
+  overflow: hidden;
+
+  margin-bottom: 16px;
+  & > img {
+    display: block;
+    height: 100%;
+    width: 100%;
+
+    object-fit: cover;
+  }
+}
+
+.img {
+  width: 327px;
+  height: 220px;
+}
+
+.projectsRole {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.5;
+
+  padding: 8px 32px;
+  border-radius: 16px;
+  background: var(--secondary-text-color);
+}
+
+.nameTechWrapper {
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.projectName {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+  text-transform: uppercase;
+  margin-right: 8px;
+}
+
+.btnProject {
+  margin-right: auto;
+
+  background: transparent;
+  border: none;
+}
+
+.skill_list {
+  display: flex;
+  gap: 16px;
+}
+
+// Media queries
+@media screen and (min-width: 375px) {
+  .container {
+    width: 327px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 475px) {
+  .container {
+    width: 427px;
+  }
+  .projectItem {
+    width: 427px;
+  }
+  .projectsImgThumb {
+    width: 427px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 720px;
+    padding: 56px 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .projectList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .projectItem {
+    width: 351px;
+  }
+  .projectsImgThumb {
+    width: 351px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1040px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .projectList {
+    gap: 24px;
+  }
+
+  .projectItem {
+    width: 508px;
+  }
+  .projectsImgThumb {
+    width: 508px;
+  }
+
+  .subHeader {
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 2.88px;
+  }
+
+  .header {
+    font-size: 32px;
+    line-height: 1.5;
+    letter-spacing: -0.64px;
+  }
+
+  .description {
+    font-size: 16px;
+    line-height: 2;
+  }
+  .btn {
+    font-size: 14px;
+    &_left {
+      font-size: 14px;
+    }
+    &_right {
+      font-size: 14px;
+    }
+  }
+
+  .projectName {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .container {
+    width: 1688px;
+  }
+
+  .projectList {
+    gap: 32px;
+  }
+
+  .projectItem {
+    width: 828px;
+  }
+  .projectsImgThumb {
+    width: 828px;
+    height: 360px;
+  }
+
+  .header {
+    font-size: 56px;
+    line-height: 1.4;
+    letter-spacing: -0.8px;
+  }
+
+  .description {
+    font-size: 24px;
+    line-height: 1.66;
+  }
+  .btn {
+    font-size: 16px;
+    &_left {
+      font-size: 16px;
+    }
+    &_right {
+      font-size: 16px;
+    }
+  }
+
+  .projectName {
+    font-size: 32px;
+  }
+
+  .icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .skillsIcon {
+    width: 30px;
+    height: 30px;
+  }
+}

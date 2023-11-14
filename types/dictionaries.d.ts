@@ -72,4 +72,7 @@ type ProjectsSection = {
   subtitle: string;
   title: string;
   description: string;
+  btnAll: string;
+  btnDeveloper: string;
+  btnDesign: string;
 };

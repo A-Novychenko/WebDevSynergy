@@ -1,15 +1,17 @@
-import type {Metadata, ResolvingMetadata} from "next";
+import type { Metadata, ResolvingMetadata } from "next";
 
-import {getDictionary} from "@/get-dictionary";
-import {Locale} from "../../../i18n-config";
+import { getDictionary } from "@/get-dictionary";
+import { Locale } from "../../../i18n-config";
+// import { Project } from "@/components/Sections/HomePage/Projects/Project";
+import { AllProjectsPage } from "@/components/Sections/AllProjectsPage/AllProjectsPage";
 
 type Props = {
-  params: {lang: "uk" | "en"};
-  searchParams: {[key: string]: string | string[] | undefined};
+  params: { lang: "uk" | "en" };
+  searchParams: { [key: string]: string | string[] | undefined };
 };
 
 export async function generateMetadata(
-  {params, searchParams}: Props,
+  { params, searchParams }: Props,
   parent: ResolvingMetadata
 ): Promise<Metadata> {
   const lang = params.lang;
@@ -20,11 +22,16 @@ export async function generateMetadata(
 }
 
 export default async function ProjectsPage({
-  params: {lang},
+  params: { lang },
 }: {
-  params: {lang: Locale};
+  params: { lang: Locale };
 }) {
   const dictionary = await getDictionary(lang);
 
-  return <h1 style={{color: "white", textAlign: "center"}}> Projects </h1>;
+  return (
+    <>
+      {/* <h1 style={{ color: "white", textAlign: "center" }}> Projects</h1> */}
+      <AllProjectsPage lang={lang} project={dictionary} />
+    </>
+  );
 }

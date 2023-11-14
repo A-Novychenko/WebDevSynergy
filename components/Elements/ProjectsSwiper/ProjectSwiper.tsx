@@ -83,8 +83,7 @@ export const ProjectSwiper = ({ lang = "en" }: { lang: Locale }) => {
                 <NavLink
                   href="/"
                   style={{ color: "white" }}
-                  className={styles.nav_link}
-                >
+                  className={styles.nav_link}>
                   Read more
                   <Image
                     src={arrow}
